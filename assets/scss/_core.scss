@@ -1,0 +1,35 @@
+/*==== Variáveis ====*/
+$primary-color: #3076e0;
+$black-color: #161616;
+$white-color: #f1f1f1;
+
+/*==== Fonts ====*/
+$font-family: "Titillium Web", sans-serif;
+$font-height-title: 120%;
+$font-height-paragraph: 140%;
+/*==== HTML Reset ====*/
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: $font-family;
+}
+
+body {
+	background: #ffffff;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: $white-color;
+}
+
+li {
+	list-style: none;
+}
