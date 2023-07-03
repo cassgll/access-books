@@ -5,8 +5,14 @@ $white-color: #f1f1f1;
 
 /*==== Fonts ====*/
 $font-family: "Titillium Web", sans-serif;
-$font-height-title: 120%;
-$font-height-paragraph: 140%;
+$height-t: 120%;
+$height-p: 140%;
+
+$font-size-title: 3.2rem;
+$font-size-subtitle: 2.4rem;
+$font-size-paragraph: 1.6rem;
+$font-size-small: 0.8rem;
+
 /*==== HTML Reset ====*/
 html {
 	scroll-behavior: smooth;
@@ -22,7 +28,6 @@ html {
 
 body {
 	background: #ffffff;
-	overflow-x: hidden;
 }
 
 a {
