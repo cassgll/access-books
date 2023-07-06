@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*==== Variáveis ====*/
+/*==== Colors ====*/
 /*==== Fonts ====*/
 /*==== HTML Reset ====*/
 html {
@@ -25,6 +24,153 @@ a {
 
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #161616;
+}
+
+button {
+  border: none;
+}
+
+main section {
+  padding: 0 4rem;
+}
+
+header {
+  height: 16vh;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+}
+header nav ul li svg {
+  color: #161616;
+}
+
+.home h1 {
+  margin-top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 120%;
+}
+.home p {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+.home button {
+  margin-top: 3.2rem;
+}
+.home button a {
+  border: none;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #3076e0;
+  color: #f1f1f1;
+  border-radius: 0.4rem;
+}
+
+.description {
+  margin-top: 6.4rem;
+}
+.description h2 {
+  margin-top: 3.2rem;
+  font-size: 2.4rem;
+  line-height: 120%;
+}
+.description p {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.books__stars h2 {
+  margin-top: 3.2rem;
+  font-size: 2.4rem;
+  line-height: 120%;
+}
+.books__stars .box__images {
+  margin-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+.books__stars .box__images .item__image img {
+  aspect-ratio: 2/3;
+}
+.books__stars .box__images .item__image h3 {
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+}
+.books__stars .box__images .item__image p {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+}
+.books__stars .box__images .item__image .stars {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+.books__stars .box__images .item__image .stars svg {
+  height: 1.6rem;
+  color: yellow;
+}
+.books__stars .box__images .item__image .stars svg polygon {
+  background-color: yellow;
+}
+
+footer {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 0 4rem;
+}
+footer .footer__author {
+  margin-top: 6.4rem;
+  margin-bottom: 4rem;
+}
+footer .footer__author img {
+  width: 30%;
+}
+footer .footer__author h2 {
+  font-size: 2.4rem;
+  padding-right: 8.5rem;
+  margin-top: 0.8rem;
+}
+footer .footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+footer .footer__info h3 {
+  font-size: 2.4rem;
+}
+footer .footer__info ul li a {
+  color: #161616;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
