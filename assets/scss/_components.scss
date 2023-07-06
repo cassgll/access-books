@@ -1,0 +1,10 @@
+@mixin button {
+	border: none;
+	padding: 0.8rem 1.6rem;
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	background-color: $primary-color;
+	color: $white-color;
+	border-radius: 0.4rem;
+}
