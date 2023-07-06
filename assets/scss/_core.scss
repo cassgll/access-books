@@ -1,7 +1,8 @@
-/*==== Variáveis ====*/
+/*==== Colors ====*/
 $primary-color: #3076e0;
 $black-color: #161616;
 $white-color: #f1f1f1;
+$gray-color: #515151;
 
 /*==== Fonts ====*/
 $font-family: "Titillium Web", sans-serif;
@@ -37,4 +38,27 @@ a {
 
 li {
 	list-style: none;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: $black-color;
+}
+button {
+	border: none;
+}
+main {
+	section {
+		padding: 0 4rem;
+	}
 }
