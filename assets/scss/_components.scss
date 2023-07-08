@@ -7,4 +7,7 @@
 	background-color: $primary-color;
 	color: $white-color;
 	border-radius: 0.4rem;
+	&:hover {
+		background-color: #2761ce;
+	}
 }

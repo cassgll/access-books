@@ -48,6 +48,7 @@ button {
 
 main section {
   padding: 0 4rem;
+  margin: 3.2rem 0;
 }
 
 header {
@@ -67,6 +68,10 @@ header nav ul {
 }
 header nav ul li svg {
   color: #161616;
+}
+
+.toggle {
+  display: none;
 }
 
 .home h1 {
@@ -91,13 +96,13 @@ header nav ul li svg {
   background-color: #3076e0;
   color: #f1f1f1;
   border-radius: 0.4rem;
+  font-size: 1.6rem;
+}
+.home button a:hover {
+  background-color: #2761ce;
 }
 
-.description {
-  margin-top: 6.4rem;
-}
 .description h2 {
-  margin-top: 3.2rem;
   font-size: 2.4rem;
   line-height: 120%;
 }
@@ -107,7 +112,6 @@ header nav ul li svg {
 }
 
 .books__stars h2 {
-  margin-top: 3.2rem;
   font-size: 2.4rem;
   line-height: 120%;
 }
@@ -144,12 +148,14 @@ header nav ul li svg {
 }
 
 footer {
+  background-color: #ddedfc;
   margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
-  padding: 0 4rem;
+  padding-bottom: 3.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 footer .footer__author {
-  margin-top: 6.4rem;
+  padding-top: 6.4rem;
   margin-bottom: 4rem;
 }
 footer .footer__author img {
@@ -171,6 +177,118 @@ footer .footer__info h3 {
 footer .footer__info ul li a {
   color: #161616;
   font-size: 1.6rem;
+}
+
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 78.125%;
+  }
+  main section {
+    padding: 0 6rem;
+    margin: 6.4rem 0;
+  }
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .toggle li a {
+    color: #161616;
+    font-size: 1.6rem;
+  }
+  .toggle li button {
+    border: none;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #3076e0;
+    color: #f1f1f1;
+    border-radius: 0.4rem;
+  }
+  .toggle li button:hover {
+    background-color: #2761ce;
+  }
+  .toggle li button a {
+    color: #f1f1f1;
+  }
+  .toggle__mobile {
+    display: none;
+  }
+  .home {
+    margin: 0;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home h1 {
+    margin-top: 0;
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home p {
+    max-width: 650px;
+  }
+  .books__stars .box__images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  footer .footer__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 93.75%;
+  }
+  main section {
+    padding: 0 8rem;
+    margin: 9.6rem 0;
+  }
+  .description {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3.2rem;
+  }
+  .description img {
+    width: 40%;
+  }
+  .books__stars .box__images {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  footer {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footer__author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  footer .footer__author h2 {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  footer .footer__info {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  footer .footer__info div h3 {
+    font-size: 1.6rem;
+  }
+  footer .footer__info div ul li a {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
