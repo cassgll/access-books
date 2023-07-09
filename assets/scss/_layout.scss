@@ -19,6 +19,58 @@ header {
 	}
 }
 
+.form__login {
+	display: flex;
+	flex-direction: column;
+
+	img {
+		background-color: #F0F7FE;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		padding: 0 4rem;
+		margin: 2.4rem 0;
+
+		label {
+			margin-top: 1.6rem;
+			font-size: $font-size-paragraph;
+			line-height: $height-p;
+		}
+
+		input {
+			background-color: #f0f0f0;
+			border: none;
+			border-radius: 4px;
+			height: 2.8rem;
+		}
+	
+		button {
+			margin-top: 3.2rem;
+			a {
+				@include button;
+				font-size: $font-size-paragraph;
+				flex-direction: column;
+			}
+		}
+
+		a {
+			color: #3076E0;
+		}
+
+		span {
+			margin-top: 0.6rem;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
 .toggle {
 	display: none;
 }
