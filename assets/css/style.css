@@ -70,6 +70,60 @@ main section {
   color: #161616;
 }
 
+.form__login {
+  display: flex;
+  flex-direction: column;
+}
+.form__login img {
+  background-color: #F0F7FE;
+}
+.form__login div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+  margin: 2.4rem 0;
+}
+.form__login div label {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+.form__login div input {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  height: 2.8rem;
+}
+.form__login div button {
+  margin-top: 3.2rem;
+}
+.form__login div button a {
+  border: none;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #3076e0;
+  color: #f1f1f1;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  flex-direction: column;
+}
+.form__login div button a:hover {
+  background-color: #2761ce;
+}
+.form__login div a {
+  color: #3076E0;
+}
+.form__login div span {
+  margin-top: 0.6rem;
+}
+.form__login div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .toggle {
   display: none;
 }
