@@ -24,7 +24,7 @@
 	flex-direction: column;
 
 	img {
-		background-color: #F0F7FE;
+		background-color: #f0f7fe;
 	}
 
 	div {
@@ -45,7 +45,7 @@
 			border-radius: 4px;
 			height: 2.8rem;
 		}
-	
+
 		button {
 			margin-top: 3.2rem;
 			a {
@@ -56,7 +56,7 @@
 		}
 
 		a {
-			color: #3076E0;
+			color: #3076e0;
 		}
 
 		span {
@@ -99,7 +99,6 @@
 .description {
 	h2 {
 		font-size: $font-size-subtitle;
-
 		line-height: $height-t;
 	}
 	p {
@@ -138,8 +137,9 @@
 				flex-direction: row;
 				gap: 0.4rem;
 				svg {
-					height: 1.6rem;
 					color: yellow;
+					width: 1.6rem;
+					fill: yellow;
 					polygon {
 						background-color: yellow;
 					}

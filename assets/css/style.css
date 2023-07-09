@@ -75,7 +75,7 @@ main section {
   flex-direction: column;
 }
 .form__login img {
-  background-color: #F0F7FE;
+  background-color: #f0f7fe;
 }
 .form__login div {
   display: flex;
@@ -85,7 +85,7 @@ main section {
 }
 .form__login div label {
   margin-top: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 140%;
 }
 .form__login div input {
@@ -106,14 +106,14 @@ main section {
   background-color: #3076e0;
   color: #f1f1f1;
   border-radius: 0.4rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   flex-direction: column;
 }
 .form__login div button a:hover {
   background-color: #2761ce;
 }
 .form__login div a {
-  color: #3076E0;
+  color: #3076e0;
 }
 .form__login div span {
   margin-top: 0.6rem;
@@ -194,8 +194,9 @@ main section {
   gap: 0.4rem;
 }
 .books__stars .box__images .item__image .stars svg {
-  height: 1.6rem;
   color: yellow;
+  width: 1.6rem;
+  fill: yellow;
 }
 .books__stars .box__images .item__image .stars svg polygon {
   background-color: yellow;
