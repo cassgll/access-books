@@ -1,4 +1,4 @@
-header {
+.header__main {
 	height: 16vh;
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
 	nav {
@@ -43,6 +43,7 @@ header {
 		}
 	}
 }
+
 .description {
 	h2 {
 		font-size: $font-size-subtitle;
@@ -94,6 +95,13 @@ header {
 			}
 		}
 	}
+	button {
+		margin-top: 3.2rem;
+		a {
+			@include button;
+			font-size: $font-size-paragraph;
+		}
+	}
 }
 
 footer {
@@ -133,4 +141,83 @@ footer {
 	}
 }
 
+/* Page Books */
+.header__books {
+	height: 16vh;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
+	display: flex;
+	padding: 0 4rem;
+	align-items: center;
+	a {
+		padding: 0.8rem;
+		border-radius: 0.4rem;
+		background-color: $white-color;
+		&:hover {
+			background-color: #d8d8d8;
+		}
+		svg {
+			color: $black-color;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+.section__search {
+	input {
+		border: none;
+		background-color: transparent;
+		padding: 1.2rem 2.4rem;
+		outline-color: $primary-color;
+		width: 100%;
+		background-color: #f1f1f1;
+		border-radius: 0.8rem;
+	}
+	svg {
+		color: $black-color;
+		margin-right: 2.4rem;
+	}
+}
+.books {
+	.books__sort {
+		display: flex;
+		flex-direction: row;
+		gap: 2.4rem;
+		button {
+			padding: 0.8rem 1.6rem;
+			border-radius: 0.4rem;
+			font-size: $font-size-paragraph;
+			color: $black-color;
+		}
+	}
+	.books__image {
+		margin-top: 6.4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.6rem;
+		.item__image {
+			h3 {
+				font-size: 16px;
+			}
+			p {
+				font-size: 12px;
+			}
+			.stars {
+				margin-top: 0.8rem;
+				display: flex;
+				align-items: start;
+				justify-content: start;
+				gap: 0.4rem;
+				svg {
+					color: yellow;
+					width: 16px;
+					fill: yellow;
+				}
+			}
+		}
+	}
+	.more__books {
+		margin-top: 3.2rem;
+		@include button;
+	}
+}
 @import "medias";

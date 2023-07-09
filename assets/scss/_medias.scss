@@ -88,6 +88,7 @@
 	footer {
 		margin-bottom: 0;
 		display: flex;
+		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
 
@@ -95,7 +96,6 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.8rem;
-
 			h2 {
 				font-size: $font-size-paragraph;
 				padding: 0;
@@ -105,8 +105,9 @@
 			display: flex;
 			flex-direction: row;
 			align-items: start;
-
+			gap: 1.6rem;
 			div {
+				width: 180px;
 				h3 {
 					font-size: $font-size-paragraph;
 				}

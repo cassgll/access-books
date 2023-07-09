@@ -51,14 +51,14 @@ main section {
   margin: 3.2rem 0;
 }
 
-header {
+.header__main {
   height: 16vh;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
 }
-header nav {
+.header__main nav {
   height: 100%;
 }
-header nav ul {
+.header__main nav ul {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -66,7 +66,7 @@ header nav ul {
   padding: 0 4rem;
   align-items: center;
 }
-header nav ul li svg {
+.header__main nav ul li svg {
   color: #161616;
 }
 
@@ -76,12 +76,12 @@ header nav ul li svg {
 
 .home h1 {
   margin-top: 3.2rem;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   line-height: 120%;
 }
 .home p {
   margin-top: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 140%;
 }
 .home button {
@@ -96,7 +96,7 @@ header nav ul li svg {
   background-color: #3076e0;
   color: #f1f1f1;
   border-radius: 0.4rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .home button a:hover {
   background-color: #2761ce;
@@ -108,7 +108,7 @@ header nav ul li svg {
 }
 .description p {
   margin-top: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .books__stars h2 {
@@ -146,6 +146,23 @@ header nav ul li svg {
 .books__stars .box__images .item__image .stars svg polygon {
   background-color: yellow;
 }
+.books__stars button {
+  margin-top: 3.2rem;
+}
+.books__stars button a {
+  border: none;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #3076e0;
+  color: #f1f1f1;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+}
+.books__stars button a:hover {
+  background-color: #2761ce;
+}
 
 footer {
   background-color: #ddedfc;
@@ -176,7 +193,93 @@ footer .footer__info h3 {
 }
 footer .footer__info ul li a {
   color: #161616;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+/* Page Books */
+.header__books {
+  height: 16vh;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
+  display: flex;
+  padding: 0 4rem;
+  align-items: center;
+}
+.header__books a {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #f1f1f1;
+}
+.header__books a:hover {
+  background-color: #d8d8d8;
+}
+.header__books a svg {
+  color: #161616;
+  width: 20px;
+  height: 20px;
+}
+
+.section__search input {
+  border: none;
+  background-color: transparent;
+  padding: 1.2rem 2.4rem;
+  outline-color: #3076e0;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 0.8rem;
+}
+.section__search svg {
+  color: #161616;
+  margin-right: 2.4rem;
+}
+
+.books .books__sort {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+.books .books__sort button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  color: #161616;
+}
+.books .books__image {
+  margin-top: 6.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+.books .books__image .item__image h3 {
+  font-size: 16px;
+}
+.books .books__image .item__image p {
+  font-size: 12px;
+}
+.books .books__image .item__image .stars {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 0.4rem;
+}
+.books .books__image .item__image .stars svg {
+  color: yellow;
+  width: 16px;
+  fill: yellow;
+}
+.books .more__books {
+  margin-top: 3.2rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #3076e0;
+  color: #f1f1f1;
+  border-radius: 0.4rem;
+}
+.books .more__books:hover {
+  background-color: #2761ce;
 }
 
 @media screen and (min-width: 720px) {
@@ -194,7 +297,7 @@ footer .footer__info ul li a {
   }
   .toggle li a {
     color: #161616;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .toggle li button {
     border: none;
@@ -266,6 +369,7 @@ footer .footer__info ul li a {
   footer {
     margin-bottom: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
@@ -275,16 +379,20 @@ footer .footer__info ul li a {
     gap: 0.8rem;
   }
   footer .footer__author h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 0;
   }
   footer .footer__info {
     display: flex;
     flex-direction: row;
     align-items: start;
+    gap: 1.6rem;
+  }
+  footer .footer__info div {
+    width: 180px;
   }
   footer .footer__info div h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   footer .footer__info div ul li a {
     font-size: 20px;
