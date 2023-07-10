@@ -55,9 +55,26 @@
 		}
 	}
 	footer {
+		padding: 0 6rem;
+		.footer__author {
+			img {
+				width: 20%;
+			}
+			h2 {
+				padding-right: 9.6rem;
+			}
+		}
 		.footer__info {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.header__books {
+		padding: 0 6rem;
+	}
+	.books {
+		.books__image {
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 }
@@ -86,13 +103,14 @@
 		}
 	}
 	footer {
-		margin-bottom: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-
+		padding-left: 8rem;
+		padding-right: 8rem;
+		padding-bottom: 2.4rem;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		gap: 5.6rem;
 		.footer__author {
+			padding-top: 4.8rem;
 			display: flex;
 			flex-direction: column;
 			gap: 0.8rem;
@@ -102,8 +120,10 @@
 			}
 		}
 		.footer__info {
+			padding-top: 4.8rem;
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			align-items: start;
 			gap: 1.6rem;
 			div {
@@ -119,6 +139,14 @@
 					}
 				}
 			}
+		}
+	}
+	.header__books {
+		padding: 0 8rem;
+	}
+	.books {
+		.books__image {
+			grid-template-columns: repeat(5, 1fr);
 		}
 	}
 }
