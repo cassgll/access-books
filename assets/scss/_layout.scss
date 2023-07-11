@@ -158,35 +158,37 @@
 
 footer {
 	background-color: #ddedfc;
-	margin-top: 3.2rem;
-	padding-bottom: 3.2rem;
-	padding-left: 4rem;
-	padding-right: 4rem;
-	.footer__author {
-		padding-top: 6.4rem;
-		margin-bottom: 4rem;
-		img {
-			width: 30%;
+	.footer__content {
+		margin-top: 3.2rem;
+		padding-bottom: 3.2rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		.footer__author {
+			padding-top: 6.4rem;
+			margin-bottom: 4rem;
+			img {
+				width: 30%;
+			}
+			h2 {
+				font-size: $font-size-subtitle;
+				padding-right: 8.5rem;
+				margin-top: 0.8rem;
+			}
 		}
-		h2 {
-			font-size: $font-size-subtitle;
-			padding-right: 8.5rem;
-			margin-top: 0.8rem;
-		}
-	}
 
-	.footer__info {
-		display: flex;
-		flex-direction: column;
-		gap: 1.6rem;
-		h3 {
-			font-size: $font-size-subtitle;
-		}
-		ul {
-			li {
-				a {
-					color: $black-color;
-					font-size: $font-size-paragraph;
+		.footer__info {
+			display: flex;
+			flex-direction: column;
+			gap: 1.6rem;
+			h3 {
+				font-size: $font-size-subtitle;
+			}
+			ul {
+				li {
+					a {
+						color: $black-color;
+						font-size: $font-size-paragraph;
+					}
 				}
 			}
 		}
