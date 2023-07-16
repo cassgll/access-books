@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="icon" href="../img/logo.svg">
     <link rel="stylesheet" href="../css/style.css" />
 	<script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -12,13 +13,18 @@
         <img src="../img/reading-glasses-amico.svg" alt="" />
 
         <div>
+            <div class="header__logo__h1">
+                <img src="../img/logo.svg" alt="">
+                <h1>Olá! Bem-vindo a Access Book</h1>
+            </div>
+
             <label for="email">Email</label>
             <input type="email" id="email" name="email" />
         
             <label for="password">Senha</label>
             <input type="password" id="password" name="password" />
         
-            <span>Esqueceu a senha? <a href="#">Clique aqui.</a></span>
+            <span class="span__forgot__pw">Esqueceu a senha? <a href="#">Clique aqui.</a></span>
         
             <button>
                 <a href="/index.html">Entrar</a>
@@ -26,7 +32,7 @@
         
             <div>
                 <span>Não possui uma conta? clique em</span>
-                <a href="createAccount.html">Criar conta.</a>
+                <a href="createAccount.html">&nbsp;Criar conta.</a>
             </div>
         </div>
     </section>
