@@ -188,9 +188,14 @@
 	html {
 		font-size: 120.125%;
 	}
+	.header__books {
+		max-width: 1366px;
+		margin: 0 auto;
+		padding: 0;
+	}
 	main {
 		section {
-			max-width: 1200px;
+			max-width: 1366px;
 			margin: 0 auto;
 			padding: 3.2rem 0;
 		}
@@ -202,7 +207,7 @@
 	}
 	.header__main {
 		nav {
-			max-width: 1200px;
+			max-width: 1366px;
 			margin: 0 auto;
 			ul {
 				padding: 0;
@@ -215,7 +220,7 @@
 	footer {
 		.footer__content {
 			padding: 0;
-			max-width: 1200px;
+			max-width: 1366px;
 			margin: 0 auto;
 		}
 	}
