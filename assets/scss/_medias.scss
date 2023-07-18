@@ -9,7 +9,7 @@
 		}
 	}
 
-	.form__login{
+	.form__login {
 		div {
 			div {
 				flex-direction: row;
@@ -66,7 +66,7 @@
 			padding: 0 6rem;
 			.footer__author {
 				img {
-					width: 20%;
+					width: 12%;
 				}
 				h2 {
 					padding-right: 9.6rem;
@@ -110,7 +110,7 @@
 				justify-content: space-evenly;
 				padding: 0;
 				margin: 1.6rem 0;
-				gap:1.6rem;
+				gap: 1.6rem;
 
 				img {
 					width: 5.8rem;
@@ -222,6 +222,11 @@
 			padding: 0;
 			max-width: 1366px;
 			margin: 0 auto;
+			.footer__author {
+				img {
+					width: 20%;
+				}
+			}
 		}
 	}
 }
