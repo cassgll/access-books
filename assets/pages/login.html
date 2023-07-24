@@ -9,31 +9,35 @@
 	<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <section class="form__login">
-        <img src="../img/reading-glasses-amico.svg" alt="" />
+    <section class="form">
+        <div class="form__img">
+            <img src="../img/reading-glasses-amico.svg" alt="" />
+        </div>
 
-        <div>
-            <div class="header__logo__h1">
-                <img src="../img/logo.svg" alt="">
-                <h1>Olá! Bem-vindo a Access Book</h1>
-            </div>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-        
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password" />
-        
-            <span class="span__forgot__pw">Esqueceu a senha? <a href="#">Clique aqui.</a></span>
-        
-            <button>
-                <a href="/index.html">Entrar</a>
-            </button>
-        
-            <div>
-                <span>Não possui uma conta? clique em</span>
-                <a href="createAccount.html">&nbsp;Criar conta.</a>
-            </div>
+        <div class="form__content">
+            <form action="" method="">
+                <legend>
+                    <img src="../img/logo.svg" alt="">
+                    <h1>Olá! Bem-vindo a Access Book</h1>
+                </legend>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+                
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" />
+            
+                <span class="span__forgot__pw">Esqueceu a senha? <a href="#">Clique aqui.</a></span>
+                
+                <button>
+                    <a href="/index.html">Entrar</a>
+                </button>
+                
+                <div class="form__footer">
+                    <span>Não possui uma conta? clique em</span>
+                    <a href="createAccount.html">&nbsp;Criar conta.</a>
+                </div>
+            </form>
         </div>
     </section>
     <script src="../scripts/index.js"></script>

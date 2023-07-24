@@ -70,35 +70,40 @@ main section {
   color: #161616;
 }
 
-.form__login {
+.form {
   display: flex;
   flex-direction: column;
 }
-.form__login img {
+.form .form__img {
   background-color: #f0f7fe;
 }
-.form__login div {
+.form .form__img img {
+  padding: 2rem 4rem;
+}
+.form .form__content {
+  margin: 0.5rem 5rem 2rem;
+}
+.form .form__content form {
   display: flex;
   flex-direction: column;
-  padding: 0 4rem;
-  margin: 2.4rem 0;
+  gap: 0.3rem;
 }
-.form__login div label {
+.form .form__content form label {
   margin-top: 1.6rem;
   font-size: 1.4rem;
   line-height: 140%;
 }
-.form__login div input {
+.form .form__content form input {
   background-color: #f0f0f0;
   border: none;
   border-radius: 4px;
   height: 2.8rem;
   padding: 1rem;
 }
-.form__login div button {
+.form .form__content form button {
   margin-top: 3.2rem;
 }
-.form__login div button a {
+.form .form__content form button a {
   border: none;
   padding: 0.8rem 1.6rem;
   display: flex;
@@ -110,25 +115,85 @@ main section {
   font-size: 1.4rem;
   flex-direction: column;
 }
-.form__login div button a:hover {
+.form .form__content form button a:hover {
   background-color: #2761ce;
 }
-.form__login div a {
+.form .form__content form a {
   color: #3076e0;
 }
-.form__login div div {
+.form .form__content form .form__footer {
+  margin-top: 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 1.6rem auto;
+  flex-direction: column;
 }
-.form__login div .span__forgot__pw {
-  margin-top: 0.6rem;
-}
-.form__login div .header__logo__h1 {
+.form .form__content legend {
   display: none;
+  /*img {
+  }*/
 }
 
+/*.form__login {
+	display: flex;
+	flex-direction: column;
+
+
+	div {
+		.img {
+			img {
+				background-color: #f0f7fe;
+			}
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			padding: 0 4rem;
+			margin: 2.4rem 0;
+
+			label {
+				margin-top: 1.6rem;
+				font-size: $font-size-paragraph;
+				line-height: $height-p;
+			}
+
+			input {
+				background-color: #f0f0f0;
+				border: none;
+				border-radius: 4px;
+				height: 2.8rem;
+				padding: 1rem;
+			}
+
+			button {
+				margin-top: 3.2rem;
+				a {
+					@include button;
+					font-size: $font-size-paragraph;
+					flex-direction: column;
+				}
+			}
+
+			a {
+				color: #3076e0;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 1.6rem auto;
+			}
+
+			.span__forgot__pw {
+				margin-top: 0.6rem;
+			}
+
+			.header__logo__h1 {
+				display: none;
+			}
+		}
+	}
+}*/
 .toggle {
   display: none;
 }
@@ -361,9 +426,6 @@ footer .footer__content .footer__info ul li a {
     padding: 0 6rem;
     margin: 6.4rem 0;
   }
-  .form__login div div {
-    flex-direction: row;
-  }
   .toggle {
     display: flex;
     align-items: center;
@@ -441,24 +503,60 @@ footer .footer__content .footer__info ul li a {
     padding: 0 8rem;
     margin: 9.6rem 0;
   }
-  .form__login {
-    height: 100vh;
+  .form {
     flex-direction: row;
+    height: 100vh;
   }
-  .form__login img {
+  .form .form__img {
     width: 60%;
   }
-  .form__login div .header__logo__h1 {
+  .form .form__content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  .form .form__content form {
+    width: 100%;
+  }
+  .form .form__content form legend {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    padding: 0;
-    margin: 1.6rem 0;
-    gap: 1.6rem;
   }
-  .form__login div .header__logo__h1 img {
-    width: 5.8rem;
-    height: 5.8rem;
+  .form .form__content form legend img {
+    height: 5.5rem;
+    width: 5.5rem;
   }
+  /*.form__login {
+  	flex-direction: row;
+
+  	div {
+  		display: flex;
+  		flex-direction: row;
+  		.img {
+  			width: 60%;
+  			img {
+  				padding: 6rem;
+  			}
+  		}
+  		.form {
+  			justify-content: center;
+  			.header__logo__h1 {
+  				display: flex;
+  				justify-content: space-evenly;
+  				padding: 0;
+  				margin: 1.6rem 0;
+  				gap: 1.6rem;
+
+  				img {
+  					width: 5.8rem;
+  					height: 5.8rem;
+  				}
+  			}
+  		}
+  	}
+  }*/
   .description {
     display: flex;
     align-items: center;
@@ -527,9 +625,6 @@ footer .footer__content .footer__info ul li a {
     max-width: 1366px;
     margin: 0 auto;
     padding: 3.2rem 0;
-  }
-  .form__login img {
-    object-fit: fill;
   }
   .header__main nav {
     max-width: 1366px;

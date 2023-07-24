@@ -19,63 +19,129 @@
 	}
 }
 
-.form__login {
+.form {
 	display: flex;
 	flex-direction: column;
 
-	img {
+	.form__img {
 		background-color: #f0f7fe;
+		img {
+			padding: 2rem 4rem;
+		}
 	}
 
-	div {
-		display: flex;
-		flex-direction: column;
-		padding: 0 4rem;
-		margin: 2.4rem 0;
+	.form__content {
+		margin: 0.5rem 5rem 2rem;
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 0.3rem;
 
-		label {
-			margin-top: 1.6rem;
-			font-size: $font-size-paragraph;
-			line-height: $height-p;
-		}
-
-		input {
-			background-color: #f0f0f0;
-			border: none;
-			border-radius: 4px;
-			height: 2.8rem;
-			padding: 1rem;
-		}
-
-		button {
-			margin-top: 3.2rem;
-			a {
-				@include button;
+			label {
+				margin-top: 1.6rem;
 				font-size: $font-size-paragraph;
+				line-height: $height-p;
+			}
+			
+			input {
+				background-color: #f0f0f0;
+				border: none;
+				border-radius: 4px;
+				height: 2.8rem;
+				padding: 1rem;
+			}
+			
+			button {
+				margin-top: 3.2rem;
+				a {
+					@include button;
+					font-size: $font-size-paragraph;
+					flex-direction: column;
+				}
+			}
+			
+			a {
+				color: $primary-color;
+			}
+			.form__footer {
+				margin-top: 1.5rem;
+				display: flex;
+				align-items: center;
 				flex-direction: column;
+
 			}
 		}
 
-		a {
-			color: #3076e0;
-		}
-
-		div {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin: 1.6rem auto;
-		}
-
-		.span__forgot__pw {
-			margin-top: 0.6rem;
-		}
-
-		.header__logo__h1 {
+		legend {
 			display: none;
+			/*img {
+			}*/
 		}
 	}
 }
+
+/*.form__login {
+	display: flex;
+	flex-direction: column;
+
+	
+	div {
+		.img {
+			img {
+				background-color: #f0f7fe;
+			}
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			padding: 0 4rem;
+			margin: 2.4rem 0;
+	
+			label {
+				margin-top: 1.6rem;
+				font-size: $font-size-paragraph;
+				line-height: $height-p;
+			}
+	
+			input {
+				background-color: #f0f0f0;
+				border: none;
+				border-radius: 4px;
+				height: 2.8rem;
+				padding: 1rem;
+			}
+	
+			button {
+				margin-top: 3.2rem;
+				a {
+					@include button;
+					font-size: $font-size-paragraph;
+					flex-direction: column;
+				}
+			}
+	
+			a {
+				color: #3076e0;
+			}
+	
+			div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 1.6rem auto;
+			}
+	
+			.span__forgot__pw {
+				margin-top: 0.6rem;
+			}
+	
+			.header__logo__h1 {
+				display: none;
+			}
+		}
+	}
+}*/
 
 .toggle {
 	display: none;
