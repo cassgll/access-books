@@ -1,0 +1,11 @@
+{
+  "name": "access-books",
+  "version": "1.0.0",
+  "description": "A book search platform using the Google API.",
+  "main": "./assets/scripts/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cássio Gabriel e Fernando Coelho",
+  "license": "MIT"
+}
