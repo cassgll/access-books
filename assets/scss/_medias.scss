@@ -74,7 +74,7 @@
 		padding: 0 6rem;
 	}
 	.books {
-		.books__image {
+		.books__all {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
@@ -97,7 +97,7 @@
 		.form__img {
 			width: 60%;
 		}
-		
+
 		.form__content {
 			display: flex;
 			align-items: center;
@@ -106,11 +106,11 @@
 
 			form {
 				width: 100%;
-				
+
 				legend {
 					display: flex;
 					align-items: center;
-    				justify-content: space-evenly;
+					justify-content: space-evenly;
 
 					img {
 						height: 5.5rem;
@@ -209,7 +209,7 @@
 		padding: 0 8rem;
 	}
 	.books {
-		.books__image {
+		.books__all {
 			grid-template-columns: repeat(5, 1fr);
 		}
 	}

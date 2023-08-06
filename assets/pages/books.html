@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -7,9 +7,9 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Book's</title>
+		<script src="https://unpkg.com/feather-icons"></script>
 		<link rel="icon" href="../img/logo.svg" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
 		<header class="header__books">
@@ -23,6 +23,7 @@
 				<input
 					type="text"
 					placeholder="Nome do livro ou autor(a)"
+					id="input-search"
 				/>
 			</section>
 
@@ -32,151 +33,7 @@
 					<button>Ordenar por</button>
 				</div>
 
-				<div class="books__image">
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-
-					<div class="item__image">
-						<img
-							src="https://source.unsplash.com/featured/120x160"
-						/>
-						<h3>Abigaiu Tony</h3>
-						<p>
-							Fatos reais sobre a escritora Abigaiu Tonele e
-							seu mariodo Tony - observando o mundo a olho
-							nú.
-						</p>
-						<div class="stars">
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-							<i data-feather="star"></i
-							><i data-feather="star"></i>
-						</div>
-					</div>
-				</div>
+				<ul class="books__all"></ul>
 
 				<button class="more__books">Carregar Mais</button>
 			</section>
@@ -233,6 +90,8 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="../scripts/index.js"></script>
+		<script src="../scripts/apiGoogle.js"></script>
 	</body>
 </html>
