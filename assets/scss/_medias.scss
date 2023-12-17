@@ -19,8 +19,8 @@
 				font-size: $font-size-paragraph;
 			}
 			button {
-				@include button;
 				a {
+					@include button;
 					color: $white-color;
 				}
 			}
@@ -81,7 +81,7 @@
 }
 @media screen and (min-width: 1200px) {
 	html {
-		font-size: 80.125%;
+		font-size: 80%;
 	}
 	main {
 		section {
@@ -110,11 +110,15 @@
 				legend {
 					display: flex;
 					align-items: center;
-					justify-content: space-evenly;
-
+					gap: 1.6rem;
+					justify-content: center;
+					margin-bottom: 3.2rem;
 					img {
 						height: 5.5rem;
 						width: 5.5rem;
+					}
+					h1 {
+						font-size: $font-size-subtitle;
 					}
 				}
 			}
@@ -149,19 +153,11 @@
 			}
 		}
 	}*/
-	.description {
-		display: flex;
-		align-items: center;
-		flex-direction: row-reverse;
-		gap: 3.2rem;
-		img {
-			width: 35%;
-		}
-	}
+
 	.books__stars {
 		.box__images {
-			grid-template-columns: repeat(5, 1fr);
-			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(5, 1fr);
 		}
 	}
 	footer {
@@ -210,13 +206,13 @@
 	}
 	.books {
 		.books__all {
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(6, 1fr);
 		}
 	}
 }
 @media screen and (min-width: 1440px) {
 	html {
-		font-size: 120.125%;
+		font-size: 90%;
 	}
 	.header__books {
 		max-width: 1366px;
@@ -235,6 +231,13 @@
 			max-width: 1366px;
 			margin: 0 auto;
 			ul {
+				padding: 0;
+			}
+		}
+	}
+	.form {
+		.form__img {
+			img {
 				padding: 0;
 			}
 		}

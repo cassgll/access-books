@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cássio Gabriel e Fernando Coelho",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Todos os livros</title>
+		<script src="https://unpkg.com/feather-icons"></script>
+		<link rel="icon" href="../assets/img/logo.svg" />
+		<link rel="stylesheet" href="../assets/css/style.css" />
+	</head>
+	<body>
+		<header class="header__books">
+			<a href="../index.html"
+				><i data-feather="corner-down-left"></i
+			></a>
+		</header>
+		<main>
+			<section class="section__search">
+				<i data-feather="search"></i>
+				<input
+					type="search"
+					placeholder="Nome do livro ou autor(a)"
+					id="input-search"
+				/>
+			</section>
+
+			<section class="books">
+				<ul class="books__all"></ul>
+			</section>
+		</main>
+
+		<script src="../assets/scripts/books.js"></script>
+	</body>
+</html>
