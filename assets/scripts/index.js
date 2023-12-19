@@ -82,3 +82,11 @@ async function handlePageLoaded() {
 }
 
 handlePageLoaded();
+
+ScrollReveal().reveal(".home", {
+	origin: "rigth",
+	distance: "0",
+	easing: "ease-in-out",
+	delay: 150,
+	duration: 1500,
+});

@@ -66,8 +66,8 @@ main section {
   padding: 0 4rem;
   align-items: center;
 }
-.header__main nav ul li svg {
-  color: #161616;
+.header__main nav ul li a img {
+  height: 3.2rem;
 }
 
 .form {
@@ -251,11 +251,12 @@ footer .footer__content .footer__info ul li a {
 .header__books {
   height: 16vh;
   display: flex;
+  justify-content: space-between;
   padding: 0 4rem;
   align-items: center;
 }
 .header__books a {
-  padding: 0.8rem;
+  padding: 1.6rem;
   border-radius: 0.4rem;
   background-color: #f1f1f1;
 }
@@ -267,23 +268,22 @@ footer .footer__content .footer__info ul li a {
   width: 20px;
   height: 20px;
 }
-
-.section__search {
+.header__books .section__search {
   display: flex;
   align-items: center;
 }
-.section__search input {
+.header__books .section__search input {
   padding: 1.6rem 4.2rem;
   background-color: #f1f1f1;
   display: block;
   position: relative;
   border: none;
-  width: 100%;
+  width: 50vw;
   outline-color: #3076e0;
   border-radius: 0.8rem;
   font-size: 1.2rem;
 }
-.section__search svg {
+.header__books .section__search svg {
   z-index: 1;
   position: absolute;
   color: #161616;
@@ -424,35 +424,6 @@ footer .footer__content .footer__info ul li a {
   .form .form__content form legend h1 {
     font-size: 2.4rem;
   }
-  /*.form__login {
-  	flex-direction: row;
-
-  	div {
-  		display: flex;
-  		flex-direction: row;
-  		.img {
-  			width: 60%;
-  			img {
-  				padding: 6rem;
-  			}
-  		}
-  		.form {
-  			justify-content: center;
-  			.header__logo__h1 {
-  				display: flex;
-  				justify-content: space-evenly;
-  				padding: 0;
-  				margin: 1.6rem 0;
-  				gap: 1.6rem;
-
-  				img {
-  					width: 5.8rem;
-  					height: 5.8rem;
-  				}
-  			}
-  		}
-  	}
-  }*/
   .books__stars .box__images {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -476,7 +447,7 @@ footer .footer__content .footer__info ul li a {
     padding: 0;
   }
   footer .footer__content .footer__info {
-    padding-top: 4.8rem;
+    padding: 4.8rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

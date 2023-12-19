@@ -11,8 +11,10 @@
 			padding: 0 4rem;
 			align-items: center;
 			li {
-				svg {
-					color: $black-color;
+				a {
+					img {
+						height: 3.2rem;
+					}
 				}
 			}
 		}
@@ -188,10 +190,11 @@ footer {
 .header__books {
 	height: 16vh;
 	display: flex;
+	justify-content: space-between;
 	padding: 0 4rem;
 	align-items: center;
 	a {
-		padding: 0.8rem;
+		padding: 1.6rem;
 		border-radius: 0.4rem;
 		background-color: $white-color;
 		&:hover {
@@ -203,29 +206,30 @@ footer {
 			height: 20px;
 		}
 	}
-}
-.section__search {
-	display: flex;
-	align-items: center;
-	input {
-		padding: 1.6rem 4.2rem;
-		background-color: #f1f1f1;
-		display: block;
-		position: relative;
-		border: none;
-		width: 100%;
-		outline-color: $primary-color;
-		border-radius: 0.8rem;
-		font-size: $font-size-paragraph;
+	.section__search {
+		display: flex;
+		align-items: center;
+		input {
+			padding: 1.6rem 4.2rem;
+			background-color: #f1f1f1;
+			display: block;
+			position: relative;
+			border: none;
+			width: 50vw;
+			outline-color: $primary-color;
+			border-radius: 0.8rem;
+			font-size: $font-size-paragraph;
+		}
+		svg {
+			z-index: 1;
+			position: absolute;
+			color: $black-color;
+			margin-left: 1.2rem;
+			margin-right: 0.8rem;
+		}
 	}
-	svg {
-		z-index: 1;
-		position: absolute;
-		color: $black-color;
-		margin-left: 1.2rem;
-		margin-right: 0.8rem;
-	}
 }
+
 .books {
 	.books__all {
 		display: grid;
