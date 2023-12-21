@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="form__content">
-				<form action="" method="">
+				<form id="form">
 					<legend>
 						<img src="../assets/img/logo.svg" alt="" />
 						<h1>Olá! Bem-vindo a Access Book</h1>
@@ -29,6 +29,7 @@
 
 					<label for="email">Email</label>
 					<input type="email" id="email" name="email" />
+					<span class="required">Email está incorreto</span>
 
 					<label for="password">Senha</label>
 					<input
@@ -36,14 +37,16 @@
 						id="password"
 						name="password"
 					/>
+					<span class="required">Senha incorreta</span>
 
 					<span class="span__forgot__pw"
 						>Esqueceu a senha?
 						<a href="#">Clique aqui.</a></span
 					>
 
-					<button>
-						<a href="/index.html">Entrar</a>
+					<button type="submit">
+						Entrar
+						<!-- <a href="/index.html">Entrar</a> -->
 					</button>
 
 					<div class="form__footer">
@@ -55,6 +58,6 @@
 				</form>
 			</div>
 		</section>
-		<script src="../scripts/index.js"></script>
+		<script src="../assets/scripts/validationFormLogin.js"></script>
 	</body>
 </html>
