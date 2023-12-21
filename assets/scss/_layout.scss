@@ -53,14 +53,16 @@
 				height: 2.8rem;
 				padding: 1rem;
 			}
+			span {
+				display: none;
+				margin-top: 0.2rem;
+				color: #e63636;
+			}
 
 			button {
+				@include button;
+				font-size: $font-size-paragraph;
 				margin-top: 3.2rem;
-				a {
-					@include button;
-					font-size: $font-size-paragraph;
-					flex-direction: column;
-				}
 			}
 			.span__forgot__pw {
 				margin-top: 1rem;
