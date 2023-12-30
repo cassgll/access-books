@@ -101,35 +101,42 @@ main section {
   height: 2.8rem;
   padding: 1rem;
 }
-.form .form__content form button {
-  margin-top: 3.2rem;
+.form .form__content form span {
+  display: none;
+  margin-top: 0.2rem;
+  color: #e63636;
 }
-.form .form__content form button a {
+.form .form__content form button {
   border: none;
   padding: 0.8rem 1.6rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
   background-color: #3076e0;
   color: #f1f1f1;
   border-radius: 0.4rem;
   font-size: 1.2rem;
-  flex-direction: column;
+  margin-top: 3.2rem;
 }
-.form .form__content form button a:hover {
+.form .form__content form button:hover {
   background-color: #2761ce;
-}
-.form .form__content form .span__forgot__pw {
-  margin-top: 1rem;
-}
-.form .form__content form a {
-  color: #3076e0;
 }
 .form .form__content form .form__footer {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.form .form__content form .form__footer span {
+  display: block;
+  color: #161616;
+}
+.form .form__content form .form__footer span a {
+  color: #3076e0;
+}
+.form .form__content form .form__footer .return_to_project {
+  margin-top: 2.4rem;
 }
 .form .form__content legend {
   display: none;
@@ -151,143 +158,29 @@ main section {
   font-size: 1.2rem;
   line-height: 140%;
 }
-.home button {
-  margin-top: 3.2rem;
-}
-.home button a {
-  border: none;
-  padding: 0.8rem 1.6rem;
+.home .section__search {
+  margin-top: 2.4rem;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  background-color: #3076e0;
-  color: #f1f1f1;
-  border-radius: 0.4rem;
-  font-size: 1.2rem;
+  width: 100%;
 }
-.home button a:hover {
-  background-color: #2761ce;
-}
-
-.books__stars h2 {
-  font-size: 2.4rem;
-  line-height: 120%;
-}
-.books__stars .box__images {
-  transition-timing-function: ease;
-  transition-duration: 2s;
-  margin-top: 3.2rem;
-  display: grid;
-  gap: 1.6rem;
-}
-.books__stars .box__images .books__items img {
-  aspect-ratio: 2/3;
-  border-radius: 0.4rem;
-}
-.books__stars .box__images .books__items h2 {
-  margin-top: 0.8rem;
-  font-size: 1.2rem;
-}
-.books__stars button {
-  margin-top: 3.2rem;
-}
-.books__stars button a {
-  border: none;
-  padding: 0.8rem 1.6rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  background-color: #3076e0;
-  color: #f1f1f1;
-  border-radius: 0.4rem;
-  font-size: 1.2rem;
-}
-.books__stars button a:hover {
-  background-color: #2761ce;
-}
-
-footer {
-  height: 100%;
-  background-color: #ddedfc;
-}
-footer .footer__content {
-  margin-top: 3.2rem;
-  padding-bottom: 3.2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-footer .footer__content .footer__author {
-  padding-top: 6.4rem;
-  margin-bottom: 4rem;
-}
-footer .footer__content .footer__author img {
-  width: 20%;
-}
-footer .footer__content .footer__author h2 {
-  font-size: 2.4rem;
-  padding-right: 8.5rem;
-  margin-top: 0.8rem;
-}
-footer .footer__content .footer__info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-footer .footer__content .footer__info h3 {
-  margin-bottom: 0.8rem;
-  font-size: 2.4rem;
-}
-footer .footer__content .footer__info ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-footer .footer__content .footer__info ul li a {
-  color: #161616;
-  font-size: 1.2rem;
-}
-
-/* Page Books */
-.header__books {
-  height: 16vh;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 4rem;
-  align-items: center;
-}
-.header__books a {
-  padding: 1.6rem;
-  border-radius: 0.4rem;
-  background-color: #f1f1f1;
-}
-.header__books a:hover {
-  background-color: #d8d8d8;
-}
-.header__books a svg {
-  color: #161616;
-  width: 20px;
-  height: 20px;
-}
-.header__books .section__search {
-  display: flex;
-  align-items: center;
-}
-.header__books .section__search input {
+.home .section__search input {
   padding: 1.6rem 4.2rem;
   background-color: #f1f1f1;
   display: block;
   position: relative;
+  width: 100%;
   border: none;
-  width: 50vw;
   outline-color: #3076e0;
-  border-radius: 0.8rem;
+  border-radius: 6rem;
   font-size: 1.2rem;
 }
-.header__books .section__search svg {
+.home .section__search svg {
+  height: 16px;
   z-index: 1;
   position: absolute;
-  color: #161616;
-  margin-left: 1.2rem;
+  color: #515151;
+  margin-left: 1.6rem;
   margin-right: 0.8rem;
 }
 
@@ -311,6 +204,7 @@ footer .footer__content .footer__info ul li a {
   font-size: 12px;
 }
 
+/* Page Books */
 @media screen and (min-width: 720px) {
   html {
     font-size: 78.125%;
@@ -333,6 +227,7 @@ footer .footer__content .footer__info ul li a {
     padding: 0.8rem 1.6rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
     background-color: #3076e0;
     color: #f1f1f1;
@@ -362,25 +257,29 @@ footer .footer__content .footer__info ul li a {
   .home p {
     max-width: 650px;
   }
-  .books__stars .box__images {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  .home .section__search {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
-  footer .footer__content {
-    padding: 0 6rem;
+  .home .section__search input {
+    padding: 1.6rem 4.2rem;
+    background-color: #f1f1f1;
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline-color: #3076e0;
+    border-radius: 6rem;
+    font-size: 1.2rem;
   }
-  footer .footer__content .footer__author img {
-    width: 12%;
-  }
-  footer .footer__content .footer__author h2 {
-    padding-right: 9.6rem;
-  }
-  footer .footer__content .footer__info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .header__books {
-    padding: 0 6rem;
+  .home .section__search svg {
+    z-index: 1;
+    position: absolute;
+    color: #515151;
+    margin-left: 1.6rem;
+    margin-right: 0.8rem;
   }
   .books .books__all {
     grid-template-columns: 1fr 1fr 1fr;
@@ -393,6 +292,9 @@ footer .footer__content .footer__info ul li a {
   main section {
     padding: 0 8rem;
     margin: 9.6rem 0;
+  }
+  .books .books__all {
+    grid-template-columns: repeat(6, 1fr);
   }
   .form {
     flex-direction: row;
@@ -424,51 +326,6 @@ footer .footer__content .footer__info ul li a {
   .form .form__content form legend h1 {
     font-size: 2.4rem;
   }
-  .books__stars .box__images {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-  footer .footer__content {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 2.4rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5.6rem;
-  }
-  footer .footer__content .footer__author {
-    padding-top: 4.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  footer .footer__content .footer__author h2 {
-    font-size: 1.2rem;
-    padding: 0;
-  }
-  footer .footer__content .footer__info {
-    padding: 4.8rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    gap: 1.6rem;
-  }
-  footer .footer__content .footer__info div {
-    width: 180px;
-  }
-  footer .footer__content .footer__info div h3 {
-    font-size: 1.2rem;
-  }
-  footer .footer__content .footer__info div ul li a {
-    font-size: 1.2rem;
-  }
-  .header__books {
-    padding: 0 8rem;
-  }
-  .books .books__all {
-    grid-template-columns: repeat(6, 1fr);
-  }
 }
 @media screen and (min-width: 1440px) {
   html {
@@ -493,17 +350,6 @@ footer .footer__content .footer__info ul li a {
   }
   .form .form__img img {
     padding: 0;
-  }
-  .home {
-    height: 84vh;
-  }
-  footer .footer__content {
-    padding: 0;
-    max-width: 1366px;
-    margin: 0 auto;
-  }
-  footer .footer__content .footer__author img {
-    width: 20%;
   }
 }
 
