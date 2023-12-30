@@ -6,11 +6,13 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Access Livros</title>
+		<title>Access Books</title>
 		<link rel="icon" href="./assets/img/logo.svg" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
 
+		<!-- LIBS -->
 		<script src="https://unpkg.com/scrollreveal"></script>
+		<!-- ICONS -->
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
@@ -41,88 +43,34 @@
 			</nav>
 		</header>
 		<main>
-			<section class="home" id="">
+			<section class="home">
 				<h1>
 					Bem-vindo ao Access Books, encontre seu livro
 					aqui!
 				</h1>
 				<p>
-					Somos uma plataforma open-source que possui um
-					estilo de pesquisa, baseado no Google livros.
-					Atualmente possuímos mais de meio milhão de livros
-					em todas as categorias.
+					Um projeto com intuito de praticar de forma
+					atenciosa, a funcionalidade da API que a google
+					disponibiliza para os usuários que utilizam a
+					plataforma Google Livros. O principal objetivo é
+					construir uma estrutura de pesquisa.
 				</p>
-
-				<button>
-					<a href="./pages/books.html">
-						<i data-feather="eye"></i> Olhar todos os
-						livros</a
-					>
-				</button>
+				<div class="section__search">
+					<i data-feather="search"></i>
+					<input
+						type="text"
+						placeholder="Titulo, nome do autor, editora..."
+						id="input-search"
+						autocomplete="off"
+					/>
+				</div>
 			</section>
 
-			<section class="books__stars">
-				<h2>Livros de Programação</h2>
-
-				<ul class="box__images"></ul>
-
-				<button>
-					<a href="./pages/books.html">Todos os livros</a>
-				</button>
+			<section class="books">
+				<ul class="books__all"></ul>
 			</section>
 		</main>
-		<footer>
-			<div class="footer__content">
-				<div class="footer__author">
-					<img src="assets/img/logo.svg" alt="" />
-					<h2>
-						<strong
-							>Access 2023 Todos os direitos reservados
-						</strong>
-					</h2>
-				</div>
-				<div class="footer__info">
-					<div>
-						<h3><strong>Plataforms</strong></h3>
-						<ul>
-							<li><a href="#">Access</a></li>
-							<li><a href="#">Access Movies</a></li>
-							<li><a href="#">Access News</a></li>
-						</ul>
-					</div>
 
-					<div>
-						<h3><strong>Sobre</strong></h3>
-						<ul>
-							<li><a href="#">A access</a></li>
-							<li><a href="#">Direitos Autorais</a></li>
-							<li><a href="#">Termos de uso</a></li>
-							<li>
-								<a href="#">Políticas de privacidade</a>
-							</li>
-						</ul>
-					</div>
-
-					<div>
-						<h3><strong>Dúvidas</strong></h3>
-						<ul>
-							<li><a href="#">Central de ajuda</a></li>
-							<li><a href="#">WhatsApp</a></li>
-							<li><a href="#">Comunidade</a></li>
-						</ul>
-					</div>
-
-					<div>
-						<h3><strong>Comunidade</strong></h3>
-						<ul>
-							<li><a href="#">Discord</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Fórum</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
 		<script src="assets/scripts/index.js"></script>
 	</body>
 </html>
