@@ -64,14 +64,18 @@
 				font-size: $font-size-paragraph;
 				margin-top: 3.2rem;
 			}
-			.span__forgot__pw {
-				margin-top: 1rem;
-			}
 
-			a {
-				color: $primary-color;
-			}
 			.form__footer {
+				span {
+					display: block;
+					color: $black-color;
+					a {
+						color: $primary-color;
+					}
+				}
+				.return_to_project {
+					margin-top: 2.4rem;
+				}
 				margin-top: 1.5rem;
 				display: flex;
 				align-items: center;
@@ -102,131 +106,28 @@
 		font-size: $font-size-paragraph;
 		line-height: $height-p;
 	}
-
-	button {
-		margin-top: 3.2rem;
-		a {
-			@include button;
-			font-size: $font-size-paragraph;
-		}
-	}
-}
-
-.books__stars {
-	h2 {
-		font-size: $font-size-subtitle;
-		line-height: $height-t;
-	}
-	.box__images {
-		transition-timing-function: ease;
-		transition-duration: 2s;
-		margin-top: 3.2rem;
-		display: grid;
-
-		gap: 1.6rem;
-		.books__items {
-			img {
-				aspect-ratio: 2/3;
-				border-radius: 0.4rem;
-			}
-			h2 {
-				margin-top: 0.8rem;
-				font-size: $font-size-paragraph;
-			}
-		}
-	}
-	button {
-		margin-top: 3.2rem;
-		a {
-			@include button;
-			font-size: $font-size-paragraph;
-		}
-	}
-}
-
-footer {
-	height: 100%;
-	background-color: #ddedfc;
-	.footer__content {
-		margin-top: 3.2rem;
-		padding-bottom: 3.2rem;
-		padding-left: 4rem;
-		padding-right: 4rem;
-		.footer__author {
-			padding-top: 6.4rem;
-			margin-bottom: 4rem;
-			img {
-				width: 20%;
-			}
-			h2 {
-				font-size: $font-size-subtitle;
-				padding-right: 8.5rem;
-				margin-top: 0.8rem;
-			}
-		}
-
-		.footer__info {
-			display: flex;
-			flex-direction: column;
-			gap: 1.6rem;
-			h3 {
-				margin-bottom: 0.8rem;
-				font-size: $font-size-subtitle;
-			}
-			ul {
-				display: flex;
-				flex-direction: column;
-				gap: 0.4rem;
-				li {
-					a {
-						color: $black-color;
-						font-size: $font-size-paragraph;
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Page Books */
-.header__books {
-	height: 16vh;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 4rem;
-	align-items: center;
-	a {
-		padding: 1.6rem;
-		border-radius: 0.4rem;
-		background-color: $white-color;
-		&:hover {
-			background-color: #d8d8d8;
-		}
-		svg {
-			color: $black-color;
-			width: 20px;
-			height: 20px;
-		}
-	}
 	.section__search {
+		margin-top: 2.4rem;
 		display: flex;
 		align-items: center;
+		width: 100%;
 		input {
 			padding: 1.6rem 4.2rem;
 			background-color: #f1f1f1;
 			display: block;
 			position: relative;
+			width: 100%;
 			border: none;
-			width: 50vw;
 			outline-color: $primary-color;
-			border-radius: 0.8rem;
+			border-radius: 6rem;
 			font-size: $font-size-paragraph;
 		}
 		svg {
+			height: 16px;
 			z-index: 1;
 			position: absolute;
-			color: $black-color;
-			margin-left: 1.2rem;
+			color: $gray-color;
+			margin-left: 1.6rem;
 			margin-right: 0.8rem;
 		}
 	}
@@ -255,5 +156,7 @@ footer {
 		}
 	}
 }
+
+/* Page Books */
 
 @import "medias";

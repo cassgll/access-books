@@ -46,39 +46,39 @@
 		p {
 			max-width: 650px;
 		}
-	}
-	.books__stars {
-		.box__images {
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(3, 1fr);
+		.section__search {
+			margin-top: 4rem;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			input {
+				padding: 1.6rem 4.2rem;
+				background-color: #f1f1f1;
+				display: block;
+				position: relative;
+				width: 100%;
+				border: none;
+				outline-color: $primary-color;
+				border-radius: 6rem;
+				font-size: $font-size-paragraph;
+			}
+			svg {
+				z-index: 1;
+				position: absolute;
+				color: $gray-color;
+				margin-left: 1.6rem;
+				margin-right: 0.8rem;
+			}
 		}
 	}
-	footer {
-		.footer__content {
-			padding: 0 6rem;
-			.footer__author {
-				img {
-					width: 12%;
-				}
-				h2 {
-					padding-right: 9.6rem;
-				}
-			}
-			.footer__info {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-			}
-		}
-	}
-	.header__books {
-		padding: 0 6rem;
-	}
+
 	.books {
 		.books__all {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 }
+
 @media screen and (min-width: 1200px) {
 	html {
 		font-size: 80%;
@@ -87,6 +87,12 @@
 		section {
 			padding: 0 8rem;
 			margin: 9.6rem 0;
+		}
+	}
+
+	.books {
+		.books__all {
+			grid-template-columns: repeat(6, 1fr);
 		}
 	}
 
@@ -124,62 +130,6 @@
 			}
 		}
 	}
-
-	.books__stars {
-		.box__images {
-			grid-template-columns: repeat(6, 1fr);
-			grid-template-rows: repeat(5, 1fr);
-		}
-	}
-	footer {
-		.footer__content {
-			padding-left: 8rem;
-			padding-right: 8rem;
-			padding-bottom: 2.4rem;
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-			gap: 5.6rem;
-			.footer__author {
-				padding-top: 4.8rem;
-				display: flex;
-				flex-direction: column;
-				gap: 0.8rem;
-				h2 {
-					font-size: $font-size-paragraph;
-					padding: 0;
-				}
-			}
-			.footer__info {
-				padding: 4.8rem 0;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: start;
-				gap: 1.6rem;
-				div {
-					width: 180px;
-					h3 {
-						font-size: $font-size-paragraph;
-					}
-					ul {
-						li {
-							a {
-								font-size: $font-size-paragraph;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	.header__books {
-		padding: 0 8rem;
-	}
-	.books {
-		.books__all {
-			grid-template-columns: repeat(6, 1fr);
-		}
-	}
 }
 @media screen and (min-width: 1440px) {
 	html {
@@ -210,21 +160,6 @@
 		.form__img {
 			img {
 				padding: 0;
-			}
-		}
-	}
-	.home {
-		height: 100vh - 16vh;
-	}
-	footer {
-		.footer__content {
-			padding: 0;
-			max-width: 1366px;
-			margin: 0 auto;
-			.footer__author {
-				img {
-					width: 20%;
-				}
 			}
 		}
 	}
