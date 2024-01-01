@@ -1,13 +1,11 @@
 /*==== FEATHER ICONS ====*/
 feather.replace();
-
 const keyGoogleBook =
 	"AIzaSyCqasJmJlaFL93p1m9-knC2ACKD53xvlu4";
 const input = document.querySelector("#input-search");
 const ul = document.querySelector(".books__all");
 let startIndex = 0;
 let maxResults = 32;
-
 async function getBooks(URL) {
 	try {
 		const bookUnique = new Map();
@@ -22,47 +20,37 @@ async function getBooks(URL) {
 			totalItems: allBookApiResults,
 			items: bookApiResults,
 		} = await response.json();
-
 		Array.from(bookApiResults);
-
 		const arrayOfBooks = await bookApiResults.map(
 			({ volumeInfo, id }) => {
 				const book = {
 					vol: volumeInfo,
 					bookID: id,
 				};
-
 				return book;
 			}
 		);
-
 		Array.from(arrayOfBooks);
-
 		arrayOfBooks.filter((book) => {
 			if (!bookUnique.has(book.bookID)) {
 				bookUnique.set(book.bookID, book);
 			}
 		});
-
 		const books = Array.from(bookUnique.values());
 		startIndex += maxResults;
-
 		return books;
 	} catch (error) {
 		alert(error);
 	}
 }
-
 async function renderBooks(books) {
 	const fragment = document.createDocumentFragment();
-
 	Array.from(books).forEach((book) => {
 		const URLimage = `https://books.google.com/books/publisher/content/images/frontcover/${book.bookID}?fife=h600&source=gbs_api`;
 		const li = document.createElement("li");
 		li.setAttribute("class", "books__items");
 		const img = document.createElement("img");
 		img.setAttribute("loading", "lazy");
-
 		if (book.vol.imageLinks === undefined) {
 			img.setAttribute("src", "../assets/img/no-image.png");
 			img.setAttribute(
@@ -73,7 +61,6 @@ async function renderBooks(books) {
 			img.setAttribute("src", URLimage);
 			img.setAttribute("alt", "Capa do livro");
 		}
-
 		const h2 = document.createElement("h2");
 		h2.textContent = `${book.vol.title}`;
 
@@ -83,13 +70,11 @@ async function renderBooks(books) {
 	ul.append(fragment);
 	return;
 }
-
 function observeLastItem(itemsObserver) {
 	const lastItem =
 		document.querySelector(".books__all").lastChild;
 	itemsObserver.observe(lastItem);
 }
-
 function handleNextItems() {
 	const valueInput = input.value;
 	const itemsObserver = new IntersectionObserver(
@@ -97,7 +82,6 @@ function handleNextItems() {
 			if (!lastItem.isIntersecting) {
 				return;
 			}
-
 			observer.unobserve(lastItem.target);
 			const item = await getBooks(
 				`https://www.googleapis.com/books/v1/volumes?q=${valueInput}&key=${keyGoogleBook}&printType=books&startIndex=${startIndex}&maxResults=${maxResults}`
@@ -108,14 +92,11 @@ function handleNextItems() {
 	);
 	observeLastItem(itemsObserver);
 }
-
 input.addEventListener("change", () => {
 	ul.innerHTML = "";
 	startIndex = 0;
 	maxResults = 32;
-
 	const valueInput = input.value;
-
 	async function handlePageLoaded() {
 		const books = await getBooks(
 			`https://www.googleapis.com/books/v1/volumes?q=${valueInput}&key=${keyGoogleBook}&printType=books&startIndex=${startIndex}&maxResults=${maxResults}`
@@ -126,9 +107,7 @@ input.addEventListener("change", () => {
 
 	handlePageLoaded();
 });
-
 // Animation ScrollReveal
-
 ScrollReveal().reveal(".home", {
 	origin: "rigth",
 	distance: "0",
@@ -136,10 +115,3 @@ ScrollReveal().reveal(".home", {
 	delay: 150,
 	duration: 1500,
 });
-
-/** Form validation */
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const password = document.getElementById("password");
-const spans = document.getElementsByClassName("required");
