@@ -96,16 +96,19 @@
 }
 
 .home {
-	h1 {
-		margin-top: 3.2rem;
-		font-size: $font-size-title;
-		line-height: $height-t;
+	.home__info {
+		h1 {
+			margin-top: 3.2rem;
+			font-size: $font-size-title;
+			line-height: $height-t;
+		}
+		p {
+			margin-top: 1.6rem;
+			font-size: $font-size-paragraph;
+			line-height: $height-p;
+		}
 	}
-	p {
-		margin-top: 1.6rem;
-		font-size: $font-size-paragraph;
-		line-height: $height-p;
-	}
+
 	.section__search {
 		margin-top: 2.4rem;
 		display: flex;
@@ -134,6 +137,7 @@
 }
 
 .books {
+	height: 100%;
 	.books__all {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
