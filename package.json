@@ -2,10 +2,14 @@
   "name": "access-books",
   "version": "1.0.0",
   "description": "A book search platform using the Google API.",
-  "main": "",
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
+    "start": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "nodemon"
   },
   "author": "Cássio Gabriel",
   "license": "MIT",
