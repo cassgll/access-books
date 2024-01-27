@@ -2,3 +2,5 @@ node_modules/
 
 # Ignorar arquivos ocultos do macOs
 _.*
+
+server.js
