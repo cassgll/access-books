@@ -1,0 +1,114 @@
+/*==== Colors ====*/
+$brown-color-50: #fbf7f1;
+$brown-color-100: #f5ecdf;
+$brown-color-300: #ddb892;
+$green-color-950: #121919;
+$green-color-900: #2b3634;
+$blue-color-link: #2e64ee;
+
+/*==== Fonts ====*/
+$font-family: "Titillium Web", sans-serif;
+
+/*==== Line heigths ====*/
+$lh-t: 120%;
+$lh-p: 140%;
+
+/*==== Font size mobile ====*/
+$fsm-title: 4rem;
+$fsm-subtitle: 3.2rem;
+$fsm-paragraph: 1.4rem;
+$fsm-small: 1.2rem;
+
+/*==== Font size tablet ====*/
+$fst-title: 4.4rem;
+$fst-subtitle: 3.6rem;
+$fst-paragraph: 1.6rem;
+$fst-small: 1.4rem;
+
+/*==== Font size desktop ====*/
+$fsd-title: 4.8rem;
+$fsd-subtitle: 4rem;
+$fsd-paragraph: 1.8rem;
+$fsd-small: 1.4rem;
+
+//+==== Font Weights ====*/
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+$fw-900: 900;
+
+/*==== HTML Reset ====*/
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: $font-family;
+}
+
+body {
+	background: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: $brown-color-50;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: $green-color-950;
+}
+h1 {
+	font-weight: $fw-700;
+}
+h2 {
+	font-weight: $fw-600;
+}
+h3 {
+	font-weight: $fw-400;
+}
+p {
+	font-weight: $fw-300;
+}
+span {
+	font-weight: $fw-300;
+}
+a {
+	font-weight: $fw-300;
+}
+
+button {
+	border: none;
+}
+
+.required {
+	color: #fe4343;
+}
+
+main {
+	section {
+		padding: 0 5.6rem;
+		margin: 6.4rem 0;
+	}
+}

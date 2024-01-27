@@ -1,0 +1,14 @@
+@mixin button {
+	border: none;
+	padding: 1.6rem 3.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	background-color: $green-color-950;
+	color: $brown-color-300;
+	border-radius: 0.8rem;
+	&:hover {
+		background-color: #000000;
+	}
+}
