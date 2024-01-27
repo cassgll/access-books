@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Access Books</title>
+		<link rel="icon" href="/img/logo.svg" />
+		<link rel="stylesheet" href="/css/style.css" />
+
+		<!-- FONTS -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- LIBS -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<!-- ICONS -->
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<header class="header__main">
+			<nav>
+				<ul>
+					<li class="logo">
+						<a href="/"
+							><svg
+								width="212"
+								height="48"
+								viewBox="0 0 212 48"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_549_3)">
+									<path
+										d="M105.996 15.1191C107.843 15.1191 110.021 15.3564 112.53 15.8334L113.838 16.0888L113.63 20.4785C110.878 20.2074 108.838 20.0693 107.514 20.0693C104.867 20.0693 103.089 20.648 102.184 21.8054C101.276 22.9627 100.825 25.1419 100.825 28.3404C100.825 31.5388 101.26 33.7519 102.133 34.9771C103.003 36.2022 104.816 36.8148 107.571 36.8148L113.686 36.4056L113.843 40.8474C110.323 41.46 107.675 41.765 105.9 41.765C101.928 41.765 99.1301 40.7197 97.5099 38.6265C95.8896 36.5333 95.0781 33.1055 95.0781 28.3404C95.0781 23.5753 95.9323 20.1814 97.6407 18.156C99.3464 16.1305 102.136 15.1191 106.004 15.1191H105.996Z"
+										fill="#121919"
+									/>
+									<path
+										d="M128.839 15.1191C130.687 15.1191 132.865 15.3564 135.374 15.8334L136.682 16.0888L136.474 20.4785C133.722 20.2074 131.682 20.0693 130.358 20.0693C127.71 20.0693 125.933 20.648 125.028 21.8054C124.12 22.9627 123.669 25.1419 123.669 28.3404C123.669 31.5388 124.104 33.7519 124.977 34.9771C125.847 36.2022 127.66 36.8148 130.414 36.8148L136.53 36.4056L136.687 40.8474C133.166 41.46 130.518 41.765 128.743 41.765C124.771 41.765 121.974 40.7197 120.354 38.6265C118.733 36.5333 117.922 33.1055 117.922 28.3404C117.922 23.5753 118.776 20.1814 120.484 18.156C122.19 16.1305 124.98 15.1191 128.847 15.1191H128.839Z"
+										fill="#121919"
+									/>
+									<path
+										d="M160.514 36.6088L161.976 36.455L162.08 40.5892C158.108 41.3713 154.588 41.7623 151.521 41.7623C147.653 41.7623 144.874 40.7248 143.184 38.6472C141.495 36.5723 140.648 33.254 140.648 28.6948C140.648 19.6443 144.428 15.1165 151.99 15.1165C159.553 15.1165 162.967 19.0135 162.967 26.805L162.601 30.7854H146.398C146.433 32.8968 146.903 34.4426 147.81 35.4306C148.715 36.4185 150.405 36.9112 152.879 36.9112C155.354 36.9112 157.898 36.8095 160.511 36.6062L160.514 36.6088ZM157.377 26.5026C157.377 23.9845 156.966 22.2224 156.149 21.2188C155.33 20.2152 153.944 19.7121 151.993 19.7121C150.042 19.7121 148.622 20.2413 147.733 21.2944C146.844 22.3501 146.382 24.0862 146.347 26.5H157.377V26.5026Z"
+										fill="#121919"
+									/>
+									<path
+										d="M186.598 20.9373C182.485 20.3925 179.506 20.1214 177.659 20.1214C175.812 20.1214 174.53 20.3351 173.818 20.76C173.102 21.1849 172.747 21.8574 172.747 22.775C172.747 23.6926 173.14 24.3416 173.924 24.7144C174.709 25.0898 176.556 25.5225 179.466 26.0152C182.375 26.5078 184.439 27.2846 185.659 28.3377C186.879 29.3935 187.487 31.2651 187.487 33.9526C187.487 36.6401 186.606 38.616 184.847 39.875C183.088 41.1341 180.518 41.7649 177.138 41.7649C175.013 41.7649 172.328 41.4756 169.088 40.8969L167.467 40.6414L167.675 35.9963C171.858 36.5411 174.872 36.8122 176.719 36.8122C178.566 36.8122 179.882 36.5906 180.664 36.1474C181.449 35.7069 181.842 34.9744 181.842 33.9526C181.842 32.9308 181.468 32.2269 180.718 31.8333C179.968 31.4423 178.174 31.0174 175.334 30.556C172.494 30.0973 170.412 29.3752 169.088 28.3873C167.764 27.3993 167.102 25.5981 167.102 22.9757C167.102 20.3534 168.017 18.3983 169.846 17.1054C171.674 15.8125 174.018 15.166 176.877 15.166C179.105 15.166 181.842 15.4397 185.082 15.9819L186.702 16.2869L186.598 20.9321V20.9373Z"
+										fill="#121919"
+									/>
+									<path
+										d="M211.114 20.9373C207 20.3925 204.022 20.1214 202.174 20.1214C200.327 20.1214 199.046 20.3351 198.333 20.76C197.618 21.1849 197.263 21.8574 197.263 22.775C197.263 23.6926 197.655 24.3416 198.44 24.7144C199.225 25.0898 201.072 25.5225 203.981 26.0152C206.891 26.5078 208.954 27.2846 210.174 28.3377C211.394 29.3935 212.003 31.2651 212.003 33.9526C212.003 36.6401 211.122 38.616 209.363 39.875C207.604 41.1341 205.033 41.7649 201.654 41.7649C199.529 41.7649 196.844 41.4756 193.603 40.8969L191.983 40.6414L192.191 35.9963C196.374 36.5411 199.388 36.8122 201.235 36.8122C203.082 36.8122 204.398 36.5906 205.18 36.1474C205.965 35.7069 206.357 34.9744 206.357 33.9526C206.357 32.9308 205.983 32.2269 205.233 31.8333C204.483 31.4423 202.69 31.0174 199.849 30.556C197.009 30.0973 194.927 29.3752 193.603 28.3873C192.279 27.3993 191.617 25.5981 191.617 22.9757C191.617 20.3534 192.533 18.3983 194.361 17.1054C196.19 15.8125 198.533 15.166 201.392 15.166C203.621 15.166 206.357 15.4397 209.598 15.9819L211.218 16.2869L211.114 20.9321V20.9373Z"
+										fill="#121919"
+									/>
+									<path
+										d="M92.0406 41.2018H86.1868L84.2542 33.6997H70.5045L68.572 41.2018C66.0014 41.2018 64.0234 39.1503 64.0234 36.773C64.0234 36.4211 64.0661 36.0614 64.1569 35.699L71.6016 6.23535H83.1518L85.2338 14.4335C85.9332 17.1809 83.8031 19.8398 80.9042 19.8398L78.71 10.9822H76.0941L73.8732 19.8398L72.6827 24.5892L71.6523 28.6974H83.0984L82.0814 24.5892H84.3263C86.3763 24.5892 88.1621 25.9525 88.6559 27.8971L92.0379 41.2018H92.0406Z"
+										fill="#121919"
+									/>
+									<path
+										d="M44.8819 0H4.27091C1.91215 0 0 1.8673 0 4.17074V43.8293C0 46.1327 1.91215 48 4.27091 48H44.8819C47.2407 48 49.1528 46.1327 49.1528 43.8293V4.17074C49.1528 1.8673 47.2407 0 44.8819 0Z"
+										fill="#121919"
+									/>
+									<path
+										d="M40.0001 19.8372V24.7326L33.4202 26.3487L29.0345 27.3106L25.4336 28.163V26.2862C25.4336 24.5709 26.6294 23.0773 28.3351 22.6654L40.0027 19.8372H40.0001Z"
+										fill="#DDB892"
+									/>
+									<path
+										d="M9.15306 19.8372V24.7326L15.7329 26.3487L20.1186 27.3106L23.7195 28.163V26.2862C23.7195 24.5709 22.5237 23.0773 20.818 22.6654L9.15039 19.8372H9.15306Z"
+										fill="#DDB892"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_549_3">
+										<rect
+											width="212"
+											height="48"
+											fill="white"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<div class="toggle">
+						<li><a href="#library">Livraria</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#gallery">Galeria</a></li>
+						<li><a href="#advantage">Vantagens</a></li>
+						<li><a href="#contact">Contato</a></li>
+						<li>
+							<a href="/createAccount">Criar conta</a>
+						</li>
+						<li>
+							<button>
+								<a href="/login">Entrar</a>
+							</button>
+						</li>
+					</div>
+					<li class="toggle__mobile">
+						<i data-feather="menu"></i>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="home" id="home">
+				<div class="home__info">
+					<h1>Access Books</h1>
+					<p>
+						Somos uma plataforma que trabalha na
+						disponibilização de livros de forma gratuita por
+						tempo limitado, funcionando de uma forma que os
+						usuários aluguem os livros desejados e tenham um
+						período para lerem. Transforme seu conhecimento
+						com a Access!
+					</p>
+					<button>
+						<a href="books">
+							<i data-feather="book"></i>Conheça nossa
+							livraria
+						</a>
+					</button>
+				</div>
+			</section>
+
+			<section class="library" id="library">
+				<img
+					class="library__image"
+					src="/img/image-5.jpg"
+					alt="Library Access Books"
+					loading="lazy"
+				/>
+				<div class="library__informations">
+					<h2>Livraria completa</h2>
+					<p>
+						Nossa livraria possui o acervo mais completo da
+						internet, contendo mais de 500 milhões de livros
+						e contando com mais de um milhão de usuários
+						cadastrados na plataforma.
+					</p>
+					<div class="library__group">
+						<div class="library__group__item">
+							<div class="icon">
+								<i data-feather="download"></i>
+							</div>
+							<span
+								>Opção de baixar livros com uma credencial
+								de aluguel.</span
+							>
+						</div>
+						<div class="library__group__item">
+							<div class="icon">
+								<i data-feather="cloud"></i>
+							</div>
+							<span
+								>Leitura de livros via cloud de forma segura
+								e confiável.</span
+							>
+						</div>
+						<div class="library__group__item">
+							<div class="icon">
+								<i data-feather="package"></i>
+							</div>
+							<span
+								>Acervo enorme para a variação de leituras e
+								gostos específicos.</span
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2>Quem somos nós?</h2>
+				<p>
+					Somos uma livraria localizada em San José da
+					Califórnia, desde de 1990. Temos mais de 500 mil
+					de livros em nosso acervo tanto digital, como
+					presencial. Nos destacamos pelo formato de
+					disponibilização da leitura para o usuário e por
+					ter livros arcaicos que ditam a história da
+					humanidade tanto de forma histórica quanto
+					científica. Nosso objetivo é entregar de forma
+					acessível o conhecimento aos usuários que desejam
+					conhecimento puro e verdadeiro, influenciando
+					sempre na construção de um pensamento baseado nos
+					fatos em que nossa raça já presenciou.
+				</p>
+			</section>
+
+			<section class="gallery" id="gallery">
+				<h2>Biblioteca</h2>
+				<div class="gallery__images">
+					<img
+						src="/img/image-3.jpg"
+						alt=""
+						loading="lazy"
+					/>
+					<img
+						src="/img/image-4.jpg"
+						alt=""
+						loading="lazy"
+					/>
+					<img
+						src="/img/image-5.jpg"
+						alt=""
+						loading="lazy"
+					/>
+				</div>
+				<p>
+					Essas são alguns setores da nossa biblioteca, um
+					ambiente tranquilo e adaptado para leitores que
+					adoram passar horas lendo, além disso possuímos
+					também um espaço para crianças onde é possível
+					deixá-las para brincar, ler e se divertir. Duas
+					pessoas acompanham esse espaço, supervisionando as
+					crianças.
+				</p>
+			</section>
+
+			<section class="environment" id="environment">
+				<img
+					src="/img/image-1.jpg"
+					alt="image, library"
+					loading="lazy"
+				/>
+				<div class="environment__informations">
+					<h2>
+						Um ambiente ideal para seus estudos e seus
+						pensamentos.
+					</h2>
+					<p>
+						Na Access você encontra o ambiente perfeito para
+						ler, podendo escolher algum livro de nossas
+						estantes ou nos notebooks disponibilizado no
+						setor de leitura da biblioteca, lendo através de
+						nossa plataforma online com uma tela específica.
+					</p>
+					<button>
+						<a href="books">
+							<i data-feather="book"></i>Conheça nossa
+							livraria
+						</a>
+					</button>
+				</div>
+			</section>
+
+			<section class="advantage" id="advantage">
+				<h2>Vantagens de ler na Access</h2>
+				<div class="advantage__items">
+					<div class="advantage__item">
+						<div class="item">
+							<i data-feather="globe"></i>
+						</div>
+						<p>
+							Conforto no presencial e digital, tendo a
+							possibilidade de ler de qualquer lugar, com ou
+							sem internet.
+						</p>
+					</div>
+
+					<div class="advantage__item">
+						<div class="item">
+							<i data-feather="book-open"></i>
+						</div>
+						<p>
+							Ambiente formalizado tanto presencial como
+							digital transformando sua experiência única.
+						</p>
+					</div>
+
+					<div class="advantage__item">
+						<div class="item">
+							<i data-feather="shield"></i>
+						</div>
+						<p>
+							Segurança em primeiro lugar, deixando seus
+							aluguéis mais práticos de serem feitos e
+							seguros.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<h2>Vem conhecer a Access!</h2>
+				<p>
+					Estamos aguardando você para conhecer nosso
+					ambiente e poder entregar uma experiência
+					incrível, estamos no off e no online como dizem
+					haha! Caso tenha alguma dúvida entre em contato
+					com nosso suporte, estamos de braços abertos para
+					recebé-lo.
+				</p>
+				<button>
+					<a href="books">
+						<i data-feather="book"></i>Conheça nossa
+						livraria
+					</a>
+				</button>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer__all">
+				<div class="footer__texts">
+					<svg
+						width="296"
+						height="96"
+						viewBox="0 0 296 96"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_549_49)">
+							<path
+								d="M83.5041 0H11.2777C5.04947 0 0 5.11437 0 11.4226V84.5774C0 90.8856 5.04947 96 11.2777 96H83.5041C89.7322 96 94.7817 90.8856 94.7817 84.5774V11.4226C94.7817 5.11437 89.7322 0 83.5041 0ZM59.7288 73.4676L57.0162 62.535H37.7037L34.9911 73.4676C30.8424 73.4676 27.8004 69.5262 28.7938 65.4493L39.253 22.5272H55.4772L58.406 34.4712C59.3891 38.4751 56.3986 42.3486 52.3219 42.3486L49.2387 29.4454H45.5636L42.4443 42.3486L40.7715 49.2669L39.3251 55.2519H55.4L53.9691 49.2669H57.1243C60.0017 49.2669 62.5135 51.2532 63.2084 54.0841L67.9593 73.4676H59.7391H59.7288Z"
+								fill="#121919"
+							/>
+							<path
+								d="M132.475 35.9153C137.515 35.9153 141.149 37.3386 143.377 40.1904C145.606 43.0421 146.718 48.0835 146.718 55.3249C146.718 62.5664 145.395 67.6078 142.755 70.4595C140.109 73.3112 135.461 74.7345 128.805 74.7345C126.505 74.7345 122.86 74.5103 117.868 74.0672L115.371 73.843V21.2656H123.298V38.1467C126.674 36.6609 129.732 35.9153 132.475 35.9153ZM128.805 67.5191C132.723 67.5191 135.327 66.5911 136.624 64.7299C137.921 62.8688 138.57 59.7094 138.57 55.2467C138.57 50.784 138.019 47.6508 136.918 45.8417C135.816 44.0326 134.02 43.1255 131.523 43.1255C129.176 43.1255 126.824 43.4957 124.477 44.2412L123.303 44.6113V67.2167C125.995 67.4149 127.827 67.5139 128.811 67.5139L128.805 67.5191Z"
+								fill="#121919"
+							/>
+							<path
+								d="M156.739 40.7481C159.261 37.5262 163.456 35.9153 169.329 35.9153C175.203 35.9153 179.398 37.5262 181.92 40.7481C184.442 43.97 185.703 48.8029 185.703 55.2467C185.703 61.6905 184.478 66.5494 182.033 69.8234C179.583 73.0974 175.352 74.7292 169.329 74.7292C163.307 74.7292 159.076 73.0922 156.626 69.8234C154.176 66.5494 152.956 61.6957 152.956 55.2467C152.956 48.7977 154.217 43.97 156.739 40.7481ZM162.72 64.9176C163.848 66.8987 166.051 67.8944 169.329 67.8944C172.608 67.8944 174.811 66.9039 175.939 64.9176C177.066 62.9365 177.627 59.6885 177.627 55.1737C177.627 50.6588 177.025 47.463 175.83 45.581C174.631 43.6989 172.464 42.7553 169.335 42.7553C166.205 42.7553 164.038 43.6989 162.839 45.581C161.639 47.463 161.042 50.6641 161.042 55.1737C161.042 59.6833 161.603 62.9312 162.731 64.9176H162.72Z"
+								fill="#121919"
+							/>
+							<path
+								d="M195.653 40.7481C198.176 37.5262 202.371 35.9153 208.244 35.9153C214.117 35.9153 218.312 37.5262 220.834 40.7481C223.356 43.97 224.617 48.8029 224.617 55.2467C224.617 61.6905 223.392 66.5494 220.947 69.8234C218.497 73.0974 214.266 74.7292 208.244 74.7292C202.221 74.7292 197.99 73.0922 195.54 69.8234C193.09 66.5494 191.87 61.6957 191.87 55.2467C191.87 48.7977 193.131 43.97 195.653 40.7481ZM201.634 64.9176C202.762 66.8987 204.965 67.8944 208.244 67.8944C211.522 67.8944 213.725 66.9039 214.853 64.9176C215.98 62.9365 216.541 59.6885 216.541 55.1737C216.541 50.6588 215.939 47.463 214.745 45.581C213.545 43.6989 211.378 42.7553 208.249 42.7553C205.119 42.7553 202.952 43.6989 201.753 45.581C200.554 47.463 199.956 50.6641 199.956 55.1737C199.956 59.6833 200.518 62.9312 201.645 64.9176H201.634Z"
+								fill="#121919"
+							/>
+							<path
+								d="M240.547 73.916H232.543V21.2656H240.547V51.6807L245.097 51.2324L253.76 36.7339H262.716L252.144 54.1363L263.303 73.916H254.275L245.318 58.2236L240.547 58.7449V73.916Z"
+								fill="#121919"
+							/>
+							<path
+								d="M294.656 44.3925C288.88 43.6 284.696 43.2038 282.101 43.2038C279.507 43.2038 277.706 43.5114 276.707 44.1318C275.703 44.7522 275.204 45.7323 275.204 47.067C275.204 48.4016 275.755 49.3452 276.856 49.8926C277.958 50.4401 280.552 51.0709 284.639 51.7903C288.726 52.5098 291.624 53.6359 293.338 55.1738C295.052 56.7118 295.906 59.4384 295.906 63.3537C295.906 67.269 294.671 70.1468 292.2 71.9819C289.73 73.8171 286.116 74.7346 281.371 74.7346C278.385 74.7346 274.617 74.3123 270.062 73.4678L267.787 73.0976L268.08 66.3306C273.953 67.123 278.184 67.5192 280.784 67.5192C283.383 67.5192 285.226 67.196 286.327 66.5548C287.429 65.9135 287.98 64.8447 287.98 63.3589C287.98 61.8731 287.455 60.8408 286.399 60.2726C285.344 59.7043 282.827 59.0839 278.838 58.4114C274.849 57.7441 271.925 56.691 270.067 55.252C268.204 53.8131 267.277 51.1856 267.277 47.3693C267.277 43.5531 268.564 40.7014 271.133 38.8193C273.701 36.9373 276.995 35.9937 281.005 35.9937C284.135 35.9937 287.98 36.3899 292.53 37.1823L294.805 37.6307L294.656 44.3977V44.3925Z"
+								fill="#121919"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_549_49">
+								<rect
+									width="295.906"
+									height="96"
+									fill="white"
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+					<span
+						>Ajude com uma doação
+						<i data-feather="heart"></i
+					></span>
+				</div>
+				<div class="footer__infomartions">
+					<div class="footer__infomartions__item">
+						<h3>Recursos</h3>
+						<ul>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Ebooks, Guias & Mais</a></li>
+							<li><a href="#">Galeria</a></li>
+							<li><a href="#">Formações Gratuitas</a></li>
+						</ul>
+					</div>
+					<div class="footer__infomartions__item">
+						<h3>Sobre</h3>
+						<ul>
+							<li>
+								<a href="#">Politicas de privacidade</a>
+							</li>
+							<li><a href="#">Entre em contato</a></li>
+							<li><a href="#">Impacto Social</a></li>
+							<li><a href="#">Código de conduta</a></li>
+							<li><a href="#">Behance - Brand</a></li>
+						</ul>
+					</div>
+					<div class="footer__infomartions__item">
+						<h3>Parcerias</h3>
+						<ul>
+							<li>
+								<a href="#">Cursos da Udemy com desconto</a>
+							</li>
+							<li>
+								<a href="#">Domestika para designers</a>
+							</li>
+							<li><a href="#">Coursera</a></li>
+						</ul>
+					</div>
+					<div class="footer__infomartions__item">
+						<h3>Suporte</h3>
+						<ul>
+							<li><a href="#">Central de ajuda</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Changelog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="license">
+			<span
+				>Access Books © 2023 - Todos os direitos
+				reservados.</span
+			>
+			<span
+				>Projeto construído por
+				<a href="https://github.com/cassgll" target="_blank"
+					>@cassgll - Cássio Gabriel</a
+				></span
+			>
+		</div>
+		<script src="/scripts/indexStyles.js"></script>
+	</body>
+</html>
