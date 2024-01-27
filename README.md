@@ -40,8 +40,8 @@ Essa foi a primeira etapa a ser desenvolvida, Caso tenha interesse em saber como
 A segunda foi o desenvolvimento das telas, onde eu desenvolvi no [Figma](https://www.figma.com/) um guia de estilo, wireframes e por fim, o protótipo. Com base na identidade visual, consegui montar um padrão de estilo onde é aplicado conceitos que a marca leva.
 
 ![UI - 1](./public/img/readme-imgs/figma.PNG)
-![UI - 2](./public/img/readme-imgsfigma-1.PNG)
-![UI - 3](./public/img/readme-imgsfigma-3.PNG)
+![UI - 2](./public/img/readme-imgs/figma-1.PNG)
+![UI - 3](./public/img/readme-imgs/figma-3.PNG)
 
 #### Front-End
 
