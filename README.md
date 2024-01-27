@@ -1,6 +1,6 @@
 # Access Books
 
-![Cover](https://drive.google.com/file/d/1J1rfVqXKcPhjclxYb0SZ-VXQvnVm2V3D/view?usp=drive_link)
+![Cover](./public/img/readme-imgs/Free_Hanging_Sign_Mockup_1.jpg)
 
 Access books é um projeto fictício que tem como objetivo praticar meus estudos de uma forma conceitual, tentando estar o mais próximo dos processos de um projeto real.
 
@@ -14,7 +14,7 @@ Access books é um projeto fictício que tem como objetivo praticar meus estudos
 
 ### Processo
 
-![Cover to project](https://drive.google.com/file/d/1C8OnL6W4hQym4PVzhCl-iOjcZtkoL24b/view?usp=drive_link)
+![Process - 1](./public/img/readme-imgs/process-access.PNG)
 
 Todo processo foi documentado pela plataforma [Notion](https://www.notion.so/pt-br) onde eu separei por etapas maiores. O projeto foi desenvolvido em três etapas, que são:
 
@@ -24,24 +24,24 @@ Todo processo foi documentado pela plataforma [Notion](https://www.notion.so/pt-
 
 Dentro dessas etapas possuem tarefas e sub-tarefas onde pude organizar de maneira eficaz e saber o que fazer em cada processo. Toda tarefa possui uma descrição do que deve ser feito. Abaixo você encontra algumas imagens de cada etapa e algumas tarefas.
 
-![Process - 1](https://drive.google.com/file/d/1rNSCh_NwLNMFaAM9_5r36yD4pQMRqojq/view?usp=drive_link)
-![Process - 2](https://drive.google.com/file/d/1kp4Xdr7PwBEGXbYhHEKeX0NKjI60bT26/view?usp=drive_link)
-![Process - 3](https://drive.google.com/file/d/1S-TOQVxG70yPfseoBlyuLFhzM8nPTm05/view?usp=drive_link)
+![Process - 2](./public/img/readme-imgs/process.PNG)
+![Process - 3](./public/img/readme-imgs/process-2.PNG)
+![Process - 4](./public/img/readme-imgs/process-3.PNG)
 
 #### Identidade Visual
 
 Essa foi a primeira etapa a ser desenvolvida, Caso tenha interesse em saber como ficou, postei a identidade no meu [Behance](https://www.behance.net/gallery/188768665/Access-Books?tracking_source=search_projects|access+books&l=1). Utilizando o briefing como referência para poder desenvolver a marca, seguindo os seguintes valores que a mesma possui - Organização, Lazer e Conhecimento - com um objetivo simples e direto _O conhecimento é leve e interessante de se buscar._ Com base em algumas dessas informações foi desenvolvida a marca.
 
-![ID - 1](https://drive.google.com/file/d/1jlSy--aa4Lhk1FaFApAIbFQRNHUMVz2i/view?usp=drive_link)
-![ID - 2](https://drive.google.com/file/d/1CeKvzVnwCvKhilSlCyVDfQd9d8ehkamd/view?usp=drive_link)
+![ID - 1](./public/img/readme-imgs/logotype.png)
+![ID - 2](./public/img/readme-imgs/brand.PNG)
 
 #### UI Design
 
 A segunda foi o desenvolvimento das telas, onde eu desenvolvi no [Figma](https://www.figma.com/) um guia de estilo, wireframes e por fim, o protótipo. Com base na identidade visual, consegui montar um padrão de estilo onde é aplicado conceitos que a marca leva.
 
-![UI - 1](https://drive.google.com/file/d/1LQy-k07P0EdSneIcMU9rqbsTKhHIx71c/view?usp=drive_link)
-![UI - 2](https://drive.google.com/file/d/1Qd0W9u5sYh0zPAQOqpdA60oAeXxqkpZv/view?usp=drive_link)
-![UI - 3](https://drive.google.com/file/d/1MUUn7fOJ6m3Sqp5AjuPIJGsks3u7viQD/view?usp=drive_link)
+![UI - 1](./public/img/readme-imgs/figma.PNG)
+![UI - 2](./public/img/readme-imgsfigma-1.PNG)
+![UI - 3](./public/img/readme-imgsfigma-3.PNG)
 
 #### Front-End
 
