@@ -1,0 +1,4 @@
+node_modules/
+
+# Ignorar arquivos ocultos do macOs
+_.*
