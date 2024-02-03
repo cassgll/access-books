@@ -2,6 +2,8 @@
 feather.replace();
 
 /*==== LIB SCROLL REVEAL ====*/
+
+/*== INDEX.HTML ==*/
 const homeItems =
 	document.querySelector(".home__info").children;
 for (let index = 0; index < homeItems.length; index++) {

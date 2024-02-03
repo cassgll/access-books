@@ -52,7 +52,7 @@ async function renderBooks(books) {
 		const img = document.createElement("img");
 		img.setAttribute("loading", "lazy");
 		if (book.vol.imageLinks === undefined) {
-			img.setAttribute("src", "/img/no-image.png");
+			img.setAttribute("src", "../public/img/no-image.png");
 			img.setAttribute(
 				"alt",
 				"Não existe capa para esse livro"
@@ -62,7 +62,12 @@ async function renderBooks(books) {
 			img.setAttribute("alt", "Capa do livro");
 		}
 		const h2 = document.createElement("h2");
-		h2.textContent = `${book.vol.title}`;
+		let subtitle = `${book.vol.title}`;
+		if (subtitle.length > 35) {
+			h2.textContent = `${subtitle.substring(0, 30)}...`;
+		} else {
+			h2.textContent = `${subtitle}`;
+		}
 
 		li.append(img, h2);
 		fragment.append(li);
