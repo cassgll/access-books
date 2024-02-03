@@ -6,7 +6,7 @@
 		}
 	}
 	.header__main {
-		nav {
+		#nav {
 			ul {
 				padding: 0 8.8rem;
 				.logo {
@@ -16,13 +16,32 @@
 						}
 					}
 				}
-				.toggle__mobile {
+				.button__mobile {
 					svg {
 						width: fit-content;
 						height: 3.2rem;
 					}
 				}
+				#menu {
+					top: 10vh;
+					right: 8.8rem;
+					li {
+						padding: 0.8rem 2.8rem;
+						a {
+							font-size: $fst-paragraph;
+						}
+						button {
+							a {
+								font-size: $fst-paragraph;
+							}
+						}
+					}
+				}
 			}
+		}
+		#nav.active #menu {
+			height: 32.6rem;
+			visibility: visible;
 		}
 	}
 
@@ -374,6 +393,9 @@
 	}
 }
 @media screen and (min-width: 1200px) {
+	html {
+		height: 100vh;
+	}
 	main {
 		section {
 			padding: 5.6rem 0;
@@ -382,7 +404,7 @@
 		}
 	}
 	.header__main {
-		nav {
+		#nav {
 			ul {
 				.logo {
 					a {
@@ -391,11 +413,20 @@
 						}
 					}
 				}
-				.toggle {
+				.button__mobile {
+					display: none;
+				}
+				#menu {
+					height: 100%;
 					display: flex;
+					flex-direction: row;
+					position: sticky;
 					align-items: center;
 					gap: 2.4rem;
+					background-color: transparent;
+					visibility: visible;
 					li {
+						padding: 0;
 						a {
 							font-size: $fsd-paragraph;
 							color: $green-color-950;
@@ -414,10 +445,11 @@
 						}
 					}
 				}
-				.toggle__mobile {
-					display: none;
-				}
 			}
+		}
+		#nav.active #menu {
+			height: 32.6rem;
+			visibility: visible;
 		}
 	}
 	.home {
@@ -651,22 +683,22 @@
 			form {
 				legend {
 					svg {
-						height: 5.6rem;
+						height: 3.2rem;
 					}
 					h1 {
-						font-size: $fsd-subtitle;
+						font-size: $fst-subtitle;
 					}
 					p {
-						font-size: $fsd-paragraph;
+						font-size: $fst-paragraph;
 					}
 				}
 				label {
-					font-size: $fsd-paragraph;
+					font-size: $fst-paragraph;
 				}
 				span {
-					font-size: $fsd-small;
+					font-size: $fst-small;
 					a {
-						font-size: $fsd-small;
+						font-size: $fst-small;
 					}
 				}
 				input {
@@ -684,7 +716,7 @@
 							font-size: $fsd-small;
 						}
 					}
-					flex-direction: column;
+					flex-direction: row;
 				}
 			}
 		}
