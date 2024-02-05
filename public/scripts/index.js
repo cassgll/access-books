@@ -52,7 +52,10 @@ async function renderBooks(books) {
 		const img = document.createElement("img");
 		img.setAttribute("loading", "lazy");
 		if (book.vol.imageLinks === undefined) {
-			img.setAttribute("src", "../public/img/no-image.png");
+			img.setAttribute(
+				"src",
+				"../public/img/no-image.webp"
+			);
 			img.setAttribute(
 				"alt",
 				"Não existe capa para esse livro"
