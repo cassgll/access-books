@@ -667,6 +667,7 @@
 
 	//==== Page login ====//
 	.form {
+		overflow-y: hidden;
 		display: flex;
 		height: 100vh;
 		.form__img {
@@ -684,7 +685,7 @@
 						height: 3.2rem;
 					}
 					h1 {
-						font-size: $fst-subtitle;
+						font-size: $fst-paragraph;
 					}
 					p {
 						font-size: $fst-paragraph;

@@ -400,19 +400,21 @@ footer {
 			legend {
 				display: flex;
 				flex-direction: column;
-				gap: 1.6rem;
+
 				svg {
 					width: fit-content;
 					height: 2.4rem;
 				}
 				h1 {
-					font-size: $fsm-subtitle;
+					font-size: 20px;
+					margin-top: 0.8rem;
 					margin-bottom: 0.8rem;
 					line-height: $lh-t;
 				}
 				p {
 					font-size: $fsm-paragraph;
 					margin-bottom: 0.8rem;
+					line-height: $lh-p;
 				}
 			}
 			.full__name {
