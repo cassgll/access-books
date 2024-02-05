@@ -973,9 +973,9 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     height: 100vh;
   }
   main section {
-    padding: 5.6rem 0;
+    padding: 0;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 9.6rem auto;
   }
   .header__main #nav ul .logo a svg {
     height: 3.2rem;
@@ -1096,9 +1096,6 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     margin-top: 0.8rem;
     font-size: 1.8rem;
     line-height: 140%;
-  }
-  .gallery {
-    height: 100vh;
   }
   .gallery h2 {
     font-size: 4rem;
