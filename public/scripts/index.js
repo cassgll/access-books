@@ -54,7 +54,7 @@ async function renderBooks(books) {
 		if (book.vol.imageLinks === undefined) {
 			img.setAttribute(
 				"src",
-				"../public/img/no-image.webp"
+				"https://bnz06pap002files.storage.live.com/y4mvBODEhZhEnw42__hjgmo7nkEiXN4yXmMeWCb1mrqy4kgXFUGJkrARX28bcN5kBuX5Pg_ZSsnTpwKBjH3lM17cBBcooeplBoR1uo_oxcO421UCMjMa21jz_Hxdus2PMHCNC4zx7yU7QPVFxIrinEXEmjmkWSlpj6_yvyDG3K8bZcW2iNvw9JfvsDLLQkTLsi1iA_0DVNAaWHswk5XcOlstN0zAVTLoWUyRE4MAkffqlM?encodeFailures=1&width=360&height=640"
 			);
 			img.setAttribute(
 				"alt",
