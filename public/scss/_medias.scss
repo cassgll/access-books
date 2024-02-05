@@ -398,9 +398,9 @@
 	}
 	main {
 		section {
-			padding: 0;
+			padding: 9.6rem 0;
 			max-width: 1100px;
-			margin: 9.6rem auto;
+			margin: 0 auto;
 		}
 	}
 	.header__main {
@@ -481,7 +481,6 @@
 		}
 	}
 	.library {
-		height: 100vh;
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;

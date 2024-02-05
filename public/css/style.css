@@ -973,9 +973,9 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     height: 100vh;
   }
   main section {
-    padding: 0;
+    padding: 9.6rem 0;
     max-width: 1100px;
-    margin: 9.6rem auto;
+    margin: 0 auto;
   }
   .header__main #nav ul .logo a svg {
     height: 3.2rem;
@@ -1056,7 +1056,6 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     height: 1.4rem;
   }
   .library {
-    height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
