@@ -17,7 +17,7 @@ body {
 			align-items: center;
 			.logo {
 				a {
-					svg {
+					img {
 						width: fit-content;
 						height: 2rem;
 					}
@@ -324,7 +324,7 @@ footer {
 		.footer__texts {
 			display: flex;
 			flex-direction: column;
-			svg {
+			img {
 				width: fit-content;
 				height: 3.2rem;
 			}
