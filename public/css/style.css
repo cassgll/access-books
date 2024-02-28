@@ -520,8 +520,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   flex-direction: column;
 }
 .form .form__content form legend img {
-  width: fit-content;
-  height: 2.4rem;
+  width: 10.6rem;
 }
 .form .form__content form legend h1 {
   font-size: 20px;
@@ -1258,8 +1257,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     margin: 0 8.8rem;
   }
   .form .form__content form legend img {
-    width: fit-content;
-    height: 3.2rem;
+    width: 14.2rem;
   }
   .form .form__content form legend h1 {
     font-size: 1.6rem;
