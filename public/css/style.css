@@ -104,7 +104,6 @@ body {
   align-items: center;
 }
 .header__main #nav ul .logo a img {
-  width: fit-content;
   height: 2rem;
 }
 .header__main #nav ul #menu {
@@ -438,7 +437,6 @@ footer .footer__all .footer__texts {
   flex-direction: column;
 }
 footer .footer__all .footer__texts img {
-  width: fit-content;
   height: 3.2rem;
 }
 footer .footer__all .footer__texts span {
