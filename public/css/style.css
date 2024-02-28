@@ -519,7 +519,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   display: flex;
   flex-direction: column;
 }
-.form .form__content form legend svg {
+.form .form__content form legend img {
   width: fit-content;
   height: 2.4rem;
 }
@@ -830,6 +830,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   }
   footer .footer__all .footer__texts img {
     height: 5.6rem;
+    width: fit-content;
   }
   footer .footer__all .footer__texts span {
     margin-top: 2.4rem;
@@ -972,6 +973,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     z-index: 2;
   }
   .form .form__img img {
+    width: 50vw;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
@@ -1255,7 +1257,8 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   .form .form__content form {
     margin: 0 8.8rem;
   }
-  .form .form__content form legend svg {
+  .form .form__content form legend img {
+    width: fit-content;
     height: 3.2rem;
   }
   .form .form__content form legend h1 {
