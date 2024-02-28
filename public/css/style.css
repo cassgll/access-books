@@ -118,7 +118,6 @@ body {
   position: absolute;
   top: 10vh;
   right: 5.6rem;
-  transition: 0.6s;
   visibility: hidden;
   overflow-y: hidden;
 }
@@ -154,6 +153,7 @@ body {
   background-color: #000000;
 }
 .header__main #nav.active #menu {
+  transition: 0.6s;
   height: 25.6rem;
   visibility: visible;
 }
@@ -988,7 +988,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     height: 100%;
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: static;
     align-items: center;
     gap: 2.4rem;
     background-color: transparent;

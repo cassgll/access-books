@@ -34,7 +34,6 @@ body {
 				position: absolute;
 				top: 10vh;
 				right: 5.6rem;
-				transition: 0.6s;
 				visibility: hidden;
 				overflow-y: hidden;
 				li {
@@ -61,6 +60,7 @@ body {
 		}
 	}
 	#nav.active #menu {
+		transition: 0.6s;
 		height: 25.6rem;
 		visibility: visible;
 	}
