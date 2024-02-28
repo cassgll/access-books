@@ -104,7 +104,7 @@ body {
   align-items: center;
 }
 .header__main #nav ul .logo a img {
-  height: 2rem;
+  width: 8.8rem;
 }
 .header__main #nav ul #menu {
   height: 0;
@@ -437,7 +437,7 @@ footer .footer__all .footer__texts {
   flex-direction: column;
 }
 footer .footer__all .footer__texts img {
-  height: 3.2rem;
+  width: 8.8rem;
 }
 footer .footer__all .footer__texts span {
   margin-top: 1.6rem;
