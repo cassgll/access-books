@@ -106,6 +106,17 @@ body {
 .header__main #nav ul .logo a img {
   width: 8.8rem;
 }
+.header__main #nav ul .return a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: #121919;
+  font-size: 1.4rem;
+}
+.header__main #nav ul .return a svg {
+  width: 1.4rem;
+}
 .header__main #nav ul #menu {
   height: 0;
   z-index: 1;
@@ -659,6 +670,7 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   }
   .header__main #nav ul .logo a img {
     height: 3.2rem;
+    width: fit-content;
   }
   .header__main #nav ul .button__mobile svg {
     width: fit-content;
@@ -917,6 +929,17 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .header__main #nav ul .logo a img {
+    height: 3.2rem;
+    width: 100%;
+  }
+  .header__main #nav ul .return a svg {
+    width: 3.2rem;
+  }
+  .header__main #nav.active #menu {
+    height: 32.6rem;
+    visibility: visible;
+  }
   .library .library__informations .library__group {
     display: flex;
     gap: 1.6rem;
@@ -976,9 +999,6 @@ footer .footer__all .footer__infomartions .footer__infomartions__item ul li a {
     padding: 9.6rem 0;
     max-width: 1100px;
     margin: 0 auto;
-  }
-  .header__main #nav ul .logo a img {
-    height: 3.2rem;
   }
   .header__main #nav ul .button__mobile {
     display: none;

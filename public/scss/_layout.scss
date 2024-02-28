@@ -22,6 +22,19 @@ body {
 					}
 				}
 			}
+			.return {
+				a {
+				  svg {
+					width: $fsm-paragraph;
+				  }
+				  display: flex;
+				  align-items: center;
+				  justify-content: center;
+				  gap: 0.4rem;
+				  color: $green-color-950;
+				  font-size: $fsm-paragraph;
+				}
+			  }
 			#menu {
 				height: 0;
 				z-index: 1;
